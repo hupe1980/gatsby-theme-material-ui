@@ -1,11 +1,12 @@
 module.exports = themeOptions => {
-  const { stylesProvider } = themeOptions;
+  const { stylesProvider, webFontConfig } = themeOptions;
   return {
     plugins: [
       {
         resolve: `gatsby-plugin-material-ui`,
         options: {
-          stylesProvider
+          stylesProvider,
+          webFontConfig
         }
       },
       {

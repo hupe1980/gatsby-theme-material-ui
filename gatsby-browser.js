@@ -1,15 +1,4 @@
-import WebFont from 'webfontloader';
-import wrapWithProvider from './wrap-with-provider';
-
-const defaultConfig = {
-  google: {
-    families: ['Roboto:400,500,700']
-  }
-};
-
-export const onInitialClientRender = (_, themeOptions) => {
-  const config = { ...defaultConfig, ...themeOptions.webFontConfig };
-  WebFont.load(config);
-};
-
+import loadWebFont from './src/load-web-font';
+import wrapWithProvider from './src/wrap-with-provider';
+export const onInitialClientRender = loadWebFont;
 export const wrapRootElement = wrapWithProvider;

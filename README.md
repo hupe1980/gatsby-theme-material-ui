@@ -35,9 +35,9 @@ module.exports = {
 
 ## Theming
 
-```javascript
-// src/gatsby-theme-material-ui/theme.js
+Create & Edit src/gatsby-theme-material-ui/theme.js
 
+```javascript
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
