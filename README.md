@@ -48,3 +48,22 @@ const theme = createMuiTheme({
 
 export default theme;
 ```
+
+## Gatsby Link
+
+```javascript
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+//import { Link } from "gatsby"
+import Link from 'gatsby-theme-material-ui/src/components/Link';
+
+const Page = () => (
+  <div>
+    <Typography>
+      Check out my <Link to="/blog">blog</Link>!
+    </Typography>
+  </div>
+);
+
+export default Page;
+```
