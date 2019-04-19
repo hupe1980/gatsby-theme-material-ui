@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-blog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -19,7 +19,5 @@
   "dependencies": {
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-theme-material-ui": "latest"
-  },
-  "peerDependencies": {},
-  "devDependencies": {}
+  }
 }
