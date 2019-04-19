@@ -55,7 +55,7 @@ export default theme;
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 //import { Link } from "gatsby"
-import Link from 'gatsby-theme-material-ui/src/components/Link';
+import { Link } from 'gatsby-theme-material-ui/components';
 
 const Page = () => (
   <div>

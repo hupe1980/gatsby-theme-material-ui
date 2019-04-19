@@ -9,7 +9,7 @@
     "start:using-redux": "yarn workspace example-using-redux start"
   },
   "workspaces": [
-    "themes/*",
+    "packages/*",
     "examples/*"
   ],
   "devDependencies": {

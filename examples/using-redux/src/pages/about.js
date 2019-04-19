@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-theme-material-ui/src/components/Link';
+import { Link } from 'gatsby-theme-material-ui/components';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-theme-material-ui/src/components/Link';
+import { Link } from 'gatsby-theme-material-ui/components';
 import { makeStyles } from '@material-ui/core/styles';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Typography from '@material-ui/core/Typography';
