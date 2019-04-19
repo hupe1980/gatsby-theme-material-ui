@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-theme-material-ui-blog",
+  "version": "0.0.1",
+  "description": "Gatsby theme for Material-UI",
+  "license": "MIT",
+  "author": "hello@webappsolutions.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hupe1980/gatsby-theme-material-ui"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-theme",
+    "material-ui"
+  ],
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "gatsby-plugin-compile-es6-packages": "^1.1.0",
+    "gatsby-theme-material-ui": "latest"
+  },
+  "peerDependencies": {},
+  "devDependencies": {}
+}

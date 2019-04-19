@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-material-ui-workspaces",
+  "name": "gatsby-theme-material-ui-root",
   "version": "1.0.0",
   "private": true,
   "author": "hello@webappsolutions.de",
@@ -9,7 +9,10 @@
     "start:using-redux": "yarn workspace example-using-redux start"
   },
   "workspaces": [
-    "gatsby-theme-material-ui",
+    "themes/*",
     "examples/*"
-  ]
+  ],
+  "devDependencies": {
+    "lerna": "^3.10.5"
+  }
 }
