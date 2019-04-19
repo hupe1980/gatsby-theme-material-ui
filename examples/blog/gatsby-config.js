@@ -4,7 +4,7 @@ module.exports = {
   },
   __experimentalThemes: [
     {
-      resolve: 'gatsby-theme-material-ui',
+      resolve: 'gatsby-theme-material-ui-blog',
       options: {
         // If you want to use styled components you should change the injection order.
         // stylesProvider: {
@@ -12,5 +12,6 @@ module.exports = {
         // },
       }
     }
-  ]
+  ],
+  plugins: [`gatsby-plugin-react-helmet`]
 };

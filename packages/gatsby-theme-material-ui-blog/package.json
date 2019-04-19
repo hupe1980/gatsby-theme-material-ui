@@ -17,7 +17,6 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-theme-material-ui": "latest"
   }
 }

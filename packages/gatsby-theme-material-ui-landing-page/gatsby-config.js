@@ -1,17 +1,23 @@
-module.exports = {
-  siteMetadata: {
-    title: `Gatsby Theme Material-UI`
-  },
-  __experimentalThemes: [
-    {
-      resolve: 'gatsby-theme-material-ui',
-      options: {
-        // If you want to use styled components you should change the injection order.
-        // stylesProvider: {
-        //   injectFirst: true,
-        // },
+module.exports = themeOptions => {
+  const { stylesProvider, webFontConfig } = themeOptions;
+
+  return {
+    __experimentalThemes: [
+      {
+        resolve: 'gatsby-theme-material-ui',
+        options: {
+          stylesProvider,
+          webFontConfig
+        }
       }
-    }
-  ],
-  plugins: [`gatsby-plugin-react-helmet`]
+    ],
+    plugins: [
+      {
+        resolve: `gatsby-plugin-page-creator`,
+        options: {
+          path: path.join(__dirname, `src`, `pages`)
+        }
+      }
+    ]
+  };
 };

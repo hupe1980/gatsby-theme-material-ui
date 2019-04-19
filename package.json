@@ -5,6 +5,7 @@
   "author": "hello@webappsolutions.de",
   "license": "MIT",
   "scripts": {
+    "start:blog": "yarn workspace example-blog start",
     "start:simple": "yarn workspace example-simple start",
     "start:using-redux": "yarn workspace example-using-redux start"
   },
