@@ -2,7 +2,7 @@ import WebFont from 'webfontloader';
 
 const defaultConfig = {
   google: {
-    families: ['Roboto:400,500,700']
+    families: ['Roboto:300,400,500']
   }
 };
 

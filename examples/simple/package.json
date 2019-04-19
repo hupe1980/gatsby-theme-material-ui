@@ -1,0 +1,21 @@
+{
+  "name": "example-simple",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "next",
+    "@material-ui/styles": "next",
+    "gatsby": "latest",
+    "gatsby-plugin-material-ui": "next",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-theme-material-ui": "0.0.10",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest"
+  },
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  }
+}
