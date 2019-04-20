@@ -4,6 +4,14 @@ module.exports = themeOptions => {
   const { stylesProvider, webFontConfig } = themeOptions;
 
   return {
+    siteMetadata: {
+      title: `Your Site-Title`,
+      social: {
+        twitter: '',
+        github: '',
+        instagram: ''
+      }
+    },
     __experimentalThemes: [
       {
         resolve: 'gatsby-theme-material-ui',

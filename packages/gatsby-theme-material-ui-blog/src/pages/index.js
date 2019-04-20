@@ -13,11 +13,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
-import Container from '@material-ui/core/Container';
 
+import Layout from '../components/Layout';
 import MainFeaturedPost from '../components/MainFeaturedPost';
 import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
 
 // import Markdown from './Markdown';
 // import post1 from './blog-post.1.md';
@@ -96,90 +95,89 @@ export default function Blog() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <Container maxWidth="lg">
-        <Toolbar className={classes.toolbar}>
-          <Button size="small">Subscribe</Button>
-          <Typography
-            component="h2"
-            variant="h5"
-            color="inherit"
-            align="center"
-            noWrap
-            className={classes.toolbarTitle}
-          >
-            Blog
-          </Typography>
-          <IconButton>
-            <SearchIcon />
-          </IconButton>
-          <Button variant="outlined" size="small">
-            Sign up
-          </Button>
-        </Toolbar>
-        <Toolbar
-          component="nav"
-          variant="dense"
-          className={classes.toolbarSecondary}
+    <Layout>
+      <Toolbar className={classes.toolbar}>
+        <Button size="small">Subscribe</Button>
+        <Typography
+          component="h2"
+          variant="h5"
+          color="inherit"
+          align="center"
+          noWrap
+          className={classes.toolbarTitle}
         >
-          {sections.map(section => (
-            <Link
-              color="inherit"
-              noWrap
-              key={section}
-              variant="body2"
-              href="#"
-              className={classes.toolbarLink}
-            >
-              {section}
-            </Link>
+          Blog
+        </Typography>
+        <IconButton>
+          <SearchIcon />
+        </IconButton>
+        <Button variant="outlined" size="small">
+          Sign up
+        </Button>
+      </Toolbar>
+      <Toolbar
+        component="nav"
+        variant="dense"
+        className={classes.toolbarSecondary}
+      >
+        {sections.map(section => (
+          <Link
+            color="inherit"
+            noWrap
+            key={section}
+            variant="body2"
+            href="#"
+            className={classes.toolbarLink}
+          >
+            {section}
+          </Link>
+        ))}
+      </Toolbar>
+      <main>
+        <MainFeaturedPost />
+        {/* Sub featured posts */}
+        <Grid container spacing={4} className={classes.cardGrid}>
+          {featuredPosts.map(post => (
+            <Grid item key={post.title} xs={12} md={6}>
+              <CardActionArea component="a" href="#">
+                <Card className={classes.card}>
+                  <div className={classes.cardDetails}>
+                    <CardContent>
+                      <Typography component="h2" variant="h5">
+                        {post.title}
+                      </Typography>
+                      <Typography variant="subtitle1" color="textSecondary">
+                        {post.date}
+                      </Typography>
+                      <Typography variant="subtitle1" paragraph>
+                        {post.description}
+                      </Typography>
+                      <Typography variant="subtitle1" color="primary">
+                        Continue reading...
+                      </Typography>
+                    </CardContent>
+                  </div>
+                  <Hidden xsDown>
+                    <CardMedia
+                      className={classes.cardMedia}
+                      image="https://source.unsplash.com/random"
+                      title="Image title"
+                    />
+                  </Hidden>
+                </Card>
+              </CardActionArea>
+            </Grid>
           ))}
-        </Toolbar>
-        <main>
-          <MainFeaturedPost />
-          {/* Sub featured posts */}
-          <Grid container spacing={4} className={classes.cardGrid}>
-            {featuredPosts.map(post => (
-              <Grid item key={post.title} xs={12} md={6}>
-                <CardActionArea component="a" href="#">
-                  <Card className={classes.card}>
-                    <div className={classes.cardDetails}>
-                      <CardContent>
-                        <Typography component="h2" variant="h5">
-                          {post.title}
-                        </Typography>
-                        <Typography variant="subtitle1" color="textSecondary">
-                          {post.date}
-                        </Typography>
-                        <Typography variant="subtitle1" paragraph>
-                          {post.description}
-                        </Typography>
-                        <Typography variant="subtitle1" color="primary">
-                          Continue reading...
-                        </Typography>
-                      </CardContent>
-                    </div>
-                    <Hidden xsDown>
-                      <CardMedia
-                        className={classes.cardMedia}
-                        image="https://source.unsplash.com/random"
-                        title="Image title"
-                      />
-                    </Hidden>
-                  </Card>
-                </CardActionArea>
-              </Grid>
-            ))}
-          </Grid>
-          {/* End sub featured posts */}
-          <Grid container spacing={5} className={classes.mainGrid}>
-            {/* Main content */}
-            <Grid item xs={12} md={8}>
-              <Typography variant="h6" gutterBottom>
-                From the Firehose
-              </Typography>
-              <Divider />
-              {/* {posts.map(post => (
+        </Grid>
+        {/* End sub featured posts */}
+        <Grid container spacing={5} className={classes.mainGrid}>
+          {/* Main content */}
+          <Grid item xs={12} md={8}>
+            <Typography variant="h6" gutterBottom>
+              From the Firehose
+            </Typography>
+            <Divider />
+            {/* {posts.map(post => (
                 <Markdown
                   className={classes.markdown}
                   key={post.substring(0, 40)}
@@ -187,13 +185,11 @@ export default function Blog() {
                   {post}
                 </Markdown>
               ))} */}
-            </Grid>
-            {/* End main content */}
-            <Sidebar />
           </Grid>
-        </main>
-      </Container>
-      <Footer />
-    </React.Fragment>
+          {/* End main content */}
+          <Sidebar />
+        </Grid>
+      </main>
+    </Layout>
   );
 }

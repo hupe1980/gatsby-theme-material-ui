@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Theme Material-UI`
+    title: `Your Site-Title`,
+    social: {
+      twitter: '',
+      github: '',
+      instagram: ''
+    }
   },
   __experimentalThemes: [
     {
