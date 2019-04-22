@@ -1,3 +1,3 @@
-# example-blog
+# example-composition
 
-Gatsby example site that shows how to use the blog theme.
+Gatsby example site that shows how to use compose themes.
