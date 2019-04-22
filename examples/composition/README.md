@@ -1,3 +1,3 @@
 # example-composition
 
-Gatsby example site that shows how to use compose themes.
+Gatsby example site that shows how to compose themes.
