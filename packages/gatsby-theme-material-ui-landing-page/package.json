@@ -17,6 +17,8 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-theme-material-ui": "latest"
+    "gatsby-plugin-page-creator": "^2.0.12",
+    "gatsby-theme-material-ui": "0.0.14",
+    "mkdirp": "^0.5.1"
   }
 }

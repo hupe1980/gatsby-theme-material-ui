@@ -1,16 +1,28 @@
 import React from 'react';
+import { ComponentProvider } from 'material-ui-mdx';
 import Container from '@material-ui/core/Container';
+import { Link } from 'gatsby-theme-material-ui/components';
 
-import SEO from '../components/SEO';
+import SEO from './seo';
 
-import Footer from './Footer';
+import Header from './header';
+import Footer from './footer';
+
+const components = {
+  a: Link
+};
 
 export default function Layout({ children }) {
   return (
     <>
-      <SEO />
-      <Container maxWidth="lg">{children}</Container>
-      <Footer />
+      <ComponentProvider components={components}>
+        <SEO />
+        <Header />
+        <Container maxWidth="lg">
+          <main>{children}</main>
+        </Container>
+        <Footer />
+      </ComponentProvider>
     </>
   );
 }

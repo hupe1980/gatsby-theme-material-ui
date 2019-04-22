@@ -9,14 +9,17 @@ module.exports = {
   },
   __experimentalThemes: [
     {
+      resolve: 'gatsby-theme-material-ui',
+      options: {
+        // stylesProvider,
+        // webFontConfig
+      }
+    },
+    {
       resolve: 'gatsby-theme-material-ui-blog',
       options: {
-        // If you want to use styled components you should change the injection order.
-        // stylesProvider: {
-        //   injectFirst: true,
-        // },
+        blogPath: '/'
       }
     }
-  ],
-  plugins: [`gatsby-plugin-react-helmet`]
+  ]
 };

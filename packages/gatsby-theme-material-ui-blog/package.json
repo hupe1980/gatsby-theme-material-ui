@@ -17,6 +17,16 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-theme-material-ui": "latest"
+    "@mdx-js/mdx": "^1.0.10",
+    "@mdx-js/react": "^1.0.6",
+    "gatsby-image": "^2.0.39",
+    "gatsby-mdx": "latest",
+    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-remark-images": "^3.0.10",
+    "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-theme-material-ui": "0.0.14",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "material-ui-mdx": "^0.0.1",
+    "mkdirp": "^0.5.1"
   }
 }

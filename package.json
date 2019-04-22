@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start:blog": "yarn workspace example-blog start",
+    "start:composition": "yarn workspace example-composition start",
     "start:simple": "yarn workspace example-simple start",
     "start:using-redux": "yarn workspace example-using-redux start"
   },

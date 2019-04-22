@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function MainFeaturedPost() {
+export default function MainFeaturedPost({ post }) {
   const classes = useStyles();
 
   return (
@@ -57,7 +57,7 @@ export default function MainFeaturedPost() {
               color="inherit"
               gutterBottom
             >
-              Title of a longer featured blog post
+              {post.frontmatter.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
               Multiple lines of text that form the lede, informing new readers
