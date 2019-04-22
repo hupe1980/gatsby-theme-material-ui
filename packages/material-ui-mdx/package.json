@@ -1,6 +1,6 @@
 {
   "name": "material-ui-mdx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Material-UI MDX",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -18,7 +18,6 @@
     "watch": "babel -w src --out-dir lib --ignore __tests__",
     "prepare": "npm run build"
   },
-  "dependencies": {},
   "peerDependencies": {
     "@material-ui/core": "^4.0.0-alpha.8",
     "@material-ui/styles": "^4.0.0-alpha.8",

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-blog",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -24,9 +24,9 @@
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-remark-images": "^3.0.10",
     "gatsby-source-filesystem": "^2.0.29",
-    "gatsby-theme-material-ui": "0.0.14",
+    "gatsby-theme-material-ui": "^0.0.15",
     "gatsby-transformer-sharp": "^2.1.18",
-    "material-ui-mdx": "^0.0.1",
+    "material-ui-mdx": "^0.0.2",
     "mkdirp": "^0.5.1"
   }
 }

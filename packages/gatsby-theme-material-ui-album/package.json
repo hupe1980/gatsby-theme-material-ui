@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-album",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -18,7 +18,7 @@
   "scripts": {},
   "dependencies": {
     "gatsby-plugin-page-creator": "^2.0.12",
-    "gatsby-theme-material-ui": "0.0.14",
+    "gatsby-theme-material-ui": "^0.0.15",
     "mkdirp": "^0.5.1"
   }
 }
