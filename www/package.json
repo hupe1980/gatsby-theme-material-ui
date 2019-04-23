@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
@@ -10,10 +10,10 @@
     "gatsby-plugin-netlify": "^2.0.14",
     "gatsby-plugin-nprogress": "^2.0.10",
     "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-theme-material-ui": "^0.0.16",
-    "gatsby-theme-material-ui-blog": "^0.0.9",
-    "gatsby-theme-material-ui-docs": "^0.0.3",
-    "gatsby-theme-material-ui-landing-page": "^0.0.8",
+    "gatsby-theme-material-ui": "^0.0.17",
+    "gatsby-theme-material-ui-blog": "^0.0.10",
+    "gatsby-theme-material-ui-docs": "^0.0.4",
+    "gatsby-theme-material-ui-landing-page": "^0.0.9",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"

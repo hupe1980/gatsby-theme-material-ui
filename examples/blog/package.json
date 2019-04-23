@@ -1,14 +1,14 @@
 {
   "name": "example-blog",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
     "@material-ui/icons": "next",
     "@material-ui/styles": "next",
     "gatsby": "latest",
-    "gatsby-theme-material-ui": "^0.0.16",
-    "gatsby-theme-material-ui-blog": "^0.0.9",
+    "gatsby-theme-material-ui": "^0.0.17",
+    "gatsby-theme-material-ui-blog": "^0.0.10",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"
