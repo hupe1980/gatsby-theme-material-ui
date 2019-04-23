@@ -1,6 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby-theme-material-ui/components';
+import { GatsbyLink, Link } from 'gatsby-theme-material-ui/components';
+import IconButton from '@material-ui/core/IconButton';
 import { makeStyles } from '@material-ui/core/styles';
+
+import GithubIcon from '../../svg-icons/github-icon';
+import TwitterIcon from '../../svg-icons/twitter-icon';
 
 const useStyles = makeStyles(theme => ({
   link: {
@@ -29,6 +33,15 @@ export default function Nav() {
       >
         Blog
       </Link>
+      <IconButton
+        component={GatsbyLink}
+        href="https://github.com/hupe1980/gatsby-theme-material-ui"
+      >
+        <GithubIcon />
+      </IconButton>
+      <IconButton component={GatsbyLink} href="https://twitter.com/hupe1980">
+        <TwitterIcon />
+      </IconButton>
     </nav>
   );
 }

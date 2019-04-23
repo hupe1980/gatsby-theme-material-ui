@@ -32,9 +32,13 @@
     "@babel/preset-react": "^7.0.0",
     "@material-ui/core": "^4.0.0-alpha.8",
     "@material-ui/styles": "^4.0.0-alpha.8",
-    "@mdx-js/mdx": "^1.0.10",
+    "@mdx-js/mdx": "^1.0.14",
     "@mdx-js/react": "^1.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "prism-react-renderer": "^0.1.6",
+    "react-live": "^2.0.1"
   }
 }

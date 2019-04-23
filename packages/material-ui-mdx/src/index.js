@@ -5,6 +5,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
+import CodeBlock from './CodeBlock';
+
 const components = {
   p: props => <Typography paragraph {...props} />,
   h1: props => <Typography variant="h1" {...props} />,
@@ -13,7 +15,9 @@ const components = {
   h4: props => <Typography variant="h4" {...props} />,
   h5: props => <Typography variant="h5" {...props} />,
   h6: props => <Typography variant="h6" {...props} />,
-  a: Link
+  a: Link,
+  pre: props => <div {...props} />,
+  code: CodeBlock
 };
 
 const rootContext = {
