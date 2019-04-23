@@ -1,17 +1,17 @@
 {
   "name": "example-composition",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
     "@material-ui/icons": "next",
     "@material-ui/styles": "next",
     "gatsby": "latest",
-    "gatsby-theme-material-ui": "^0.0.17",
-    "gatsby-theme-material-ui-album": "^0.0.4",
-    "gatsby-theme-material-ui-blog": "^0.0.10",
-    "gatsby-theme-material-ui-landing-page": "^0.0.9",
-    "gatsby-theme-material-ui-pricing": "^0.0.4",
+    "gatsby-theme-material-ui": "^0.0.18",
+    "gatsby-theme-material-ui-album": "^0.0.5",
+    "gatsby-theme-material-ui-blog": "^0.0.11",
+    "gatsby-theme-material-ui-landing-page": "^0.0.10",
+    "gatsby-theme-material-ui-pricing": "^0.0.5",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"

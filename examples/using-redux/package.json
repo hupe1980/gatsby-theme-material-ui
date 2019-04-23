@@ -1,12 +1,12 @@
 {
   "name": "example-using-redux",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
     "@material-ui/styles": "next",
     "gatsby": "latest",
-    "gatsby-theme-material-ui": "^0.0.17",
+    "gatsby-theme-material-ui": "^0.0.18",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest",
