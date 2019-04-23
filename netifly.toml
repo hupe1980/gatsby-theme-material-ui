@@ -1,0 +1,4 @@
+[build.environment]
+  NODE_VERSION = "8"
+  YARN_VERSION = "1.9.4"
+  YARN_FLAGS = "--pure-lockfile --verbose"
