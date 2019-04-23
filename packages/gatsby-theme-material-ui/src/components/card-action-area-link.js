@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardActionArea from '@material-ui/core/CardActionArea';
 
-import GatsbyLink from './GatsbyLink';
+import GatsbyLink from './gatsby-link';
 
 class CardActionAreaLink extends Component {
   renderLink = React.forwardRef((props, ref) => (

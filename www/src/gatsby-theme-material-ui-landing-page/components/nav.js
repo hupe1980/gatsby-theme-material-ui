@@ -1,6 +1,5 @@
 import React from 'react';
-import { GatsbyLink, Link } from 'gatsby-theme-material-ui/components';
-import IconButton from '@material-ui/core/IconButton';
+import { IconButtonLink, Link } from 'gatsby-theme-material-ui/components';
 import { makeStyles } from '@material-ui/core/styles';
 
 import GithubIcon from '../../svg-icons/github-icon';
@@ -33,15 +32,12 @@ export default function Nav() {
       >
         Blog
       </Link>
-      <IconButton
-        component={GatsbyLink}
-        href="https://github.com/hupe1980/gatsby-theme-material-ui"
-      >
+      <IconButtonLink href="https://github.com/hupe1980/gatsby-theme-material-ui">
         <GithubIcon />
-      </IconButton>
-      <IconButton component={GatsbyLink} href="https://twitter.com/hupe1980">
+      </IconButtonLink>
+      <IconButtonLink href="https://twitter.com/hupe1980">
         <TwitterIcon />
-      </IconButton>
+      </IconButtonLink>
     </nav>
   );
 }

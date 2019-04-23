@@ -16,7 +16,7 @@
   "scripts": {
     "build": "babel src --out-dir lib --ignore __tests__",
     "watch": "babel -w src --out-dir lib --ignore __tests__",
-    "prepare": "npm run build"
+    "prepare": "cross-env NODE_ENV=production yarn build"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.0.0-alpha.8",
@@ -35,6 +35,7 @@
     "@material-ui/styles": "^4.0.0-alpha.8",
     "@mdx-js/mdx": "^1.0.14",
     "@mdx-js/react": "^1.0.6",
+    "cross-env": "^5.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
