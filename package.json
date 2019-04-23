@@ -15,7 +15,9 @@
     "build:simple": "yarn workspace example-simple build",
     "build:using-redux": "yarn workspace example-using-redux build",
     "build:www": "yarn workspace www build",
-    "prepare": "lerna run prepare"
+    "prepare": "lerna run prepare",
+    "grooming:outdated": "yarn outdated",
+    "grooming:upgrade": "yarn upgrade-interactive --latest"
   },
   "workspaces": [
     "packages/*",
