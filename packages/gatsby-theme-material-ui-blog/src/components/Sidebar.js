@@ -32,7 +32,7 @@ const archives = [
 
 const social = ['GitHub', 'Twitter', 'Facebook'];
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   const classes = useStyles();
 
   return (

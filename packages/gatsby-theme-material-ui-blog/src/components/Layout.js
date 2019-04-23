@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentProvider } from 'material-ui-mdx';
-import Container from '@material-ui/core/Container';
 import { Link } from 'gatsby-theme-material-ui/components';
+import Container from '@material-ui/core/Container';
 
 import SEO from './seo';
 

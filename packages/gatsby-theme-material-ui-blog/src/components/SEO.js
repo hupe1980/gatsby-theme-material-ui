@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
 
-export default function SEO() {
+export default function SEO(props) {
   const { title } = useSiteMetadata();
 
   return (
