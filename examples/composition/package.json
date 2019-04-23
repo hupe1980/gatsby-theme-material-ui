@@ -1,6 +1,6 @@
 {
   "name": "example-composition",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
@@ -9,8 +9,8 @@
     "gatsby": "latest",
     "gatsby-theme-material-ui": "^0.0.15",
     "gatsby-theme-material-ui-album": "^0.0.2",
-    "gatsby-theme-material-ui-blog": "^0.0.7",
-    "gatsby-theme-material-ui-landing-page": "^0.0.6",
+    "gatsby-theme-material-ui-blog": "^0.0.8",
+    "gatsby-theme-material-ui-landing-page": "^0.0.7",
     "gatsby-theme-material-ui-pricing": "^0.0.2",
     "react": "latest",
     "react-dom": "latest",
