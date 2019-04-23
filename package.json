@@ -8,11 +8,19 @@
     "start:blog": "yarn workspace example-blog start",
     "start:composition": "yarn workspace example-composition start",
     "start:simple": "yarn workspace example-simple start",
-    "start:using-redux": "yarn workspace example-using-redux start"
+    "start:using-redux": "yarn workspace example-using-redux start",
+    "start:www": "yarn workspace www start",
+    "build:blog": "yarn workspace example-blog build",
+    "build:composition": "yarn workspace example-composition build",
+    "build:simple": "yarn workspace example-simple build",
+    "build:using-redux": "yarn workspace example-using-redux build",
+    "build:www": "yarn workspace www build",
+    "prepare": "lerna run prepare"
   },
   "workspaces": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "www"
   ],
   "devDependencies": {
     "lerna": "^3.10.5"

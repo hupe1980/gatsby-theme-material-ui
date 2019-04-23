@@ -45,7 +45,7 @@ export default function Blog({ blogPath, featuredPosts, posts }) {
 
   return (
     <Layout>
-      <MainFeaturedPost post={mainFeaturedPost} />
+      {mainFeaturedPost && <MainFeaturedPost post={mainFeaturedPost} />}
       <Grid container spacing={4} className={classes.cardGrid}>
         {featuredPosts.map(post => (
           <Grid item key={post.id} xs={12} md={6}>
