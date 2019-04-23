@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import ThemeTopLayout from 'gatsby-theme-material-ui/src/components/TopLayout';
+import ThemeTopLayout from 'gatsby-theme-material-ui/src/components/top-layout';
 
 import createStore from '../../state/createStore';
 

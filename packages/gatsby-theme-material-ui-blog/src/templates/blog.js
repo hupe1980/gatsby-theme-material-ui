@@ -5,13 +5,10 @@ import Blog from '../components/blog';
 
 export default props => {
   const {
-    pageContext,
     data: {
       allMdx: { edges }
     }
   } = props;
-
-  const { blogPath } = pageContext;
 
   const posts = edges
     .filter(
@@ -27,9 +24,7 @@ export default props => {
     )
     .map(edge => edge.node);
 
-  return (
-    <Blog blogPath={blogPath} featuredPosts={featuredPosts} posts={posts} />
-  );
+  return <Blog featuredPosts={featuredPosts} posts={posts} />;
 };
 
 export const pageQuery = graphql`
@@ -38,6 +33,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           excerpt(pruneLength: 150)
           code {
             body

@@ -1,18 +1,53 @@
 const fs = require(`fs`);
 const path = require(`path`);
 const mkdirp = require(`mkdirp`);
-const { createFilePath } = require('gatsby-source-filesystem');
 
 const Post = require.resolve('./src/templates/post');
 const Blog = require.resolve('./src/templates/blog');
 
+function getOptions(pluginOptions) {
+  const defaultOptions = {
+    blogPath: '/blog',
+    useFeaturedPosts: true
+  };
+
+  return {
+    ...defaultOptions,
+    ...pluginOptions
+  };
+}
+
+exports.onCreateNode = ({ node, getNode, actions }, pluginOptions) => {
+  const { createNodeField } = actions;
+  const { blogPath } = getOptions(pluginOptions);
+
+  if (node.internal.type === `Mdx`) {
+    const parent = getNode(node.parent);
+
+    if (parent.internal.type === 'File') {
+      createNodeField({
+        name: `sourceName`,
+        node,
+        value: parent.sourceInstanceName
+      });
+    }
+
+    if (node.frontmatter.slug) {
+      const slug = path.join(blogPath, node.frontmatter.slug);
+
+      createNodeField({
+        node,
+        name: `slug`,
+        value: slug
+      });
+    }
+  }
+};
+
 exports.createPages = async ({ graphql, actions }, pluginOptions) => {
   const { createPage } = actions;
-  const { blogPath = '/blog' } = pluginOptions;
 
-  const toPostPath = node => {
-    return path.join(blogPath, node.frontmatter.slug);
-  };
+  const { blogPath } = getOptions(pluginOptions);
 
   const result = await graphql(`
     {
@@ -20,6 +55,10 @@ exports.createPages = async ({ graphql, actions }, pluginOptions) => {
         edges {
           node {
             id
+            fields {
+              slug
+              sourceName
+            }
             frontmatter {
               slug
               title
@@ -44,6 +83,7 @@ exports.createPages = async ({ graphql, actions }, pluginOptions) => {
   }
 
   const { mdxPages } = result.data;
+
   const posts = mdxPages.edges.filter(
     ({ node }) => node.parent.sourceInstanceName === 'posts'
   );
@@ -51,7 +91,7 @@ exports.createPages = async ({ graphql, actions }, pluginOptions) => {
   // Create posts pages
   posts.forEach(({ node }) => {
     createPage({
-      path: toPostPath(node),
+      path: node.fields.slug,
       context: node,
       component: Post
     });
@@ -59,10 +99,32 @@ exports.createPages = async ({ graphql, actions }, pluginOptions) => {
 
   createPage({
     path: blogPath,
-    context: {
-      blogPath
-    },
     component: Blog
+  });
+};
+
+exports.sourceNodes = async ({ actions }) => {
+  const { createTypes } = actions;
+
+  const schemaFile = path.join(__dirname, `schema.gql`);
+
+  const typeDefs = fs.readFileSync(schemaFile).toString();
+
+  createTypes(typeDefs);
+};
+
+exports.createResolvers = ({ createResolvers }, pluginOptions) => {
+  createResolvers({
+    Query: {
+      blogOptions: {
+        type: `BlogOptions`,
+        resolve(source, args, context, info) {
+          return {
+            ...getOptions(pluginOptions)
+          };
+        }
+      }
+    }
   });
 };
 

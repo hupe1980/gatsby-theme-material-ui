@@ -24,7 +24,8 @@ module.exports = {
     {
       resolve: 'gatsby-theme-material-ui-blog',
       options: {
-        blogPath: '/blog'
+        blogPath: '/blog',
+        useFeaturedPosts: false
       }
     },
     {
@@ -33,5 +34,6 @@ module.exports = {
         docsPath: '/docs'
       }
     }
-  ]
+  ],
+  plugins: [`gatsby-plugin-nprogress`, `gatsby-plugin-netlify`]
 };

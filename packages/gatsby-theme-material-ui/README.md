@@ -72,12 +72,12 @@ export default Page;
 
 ## Customizing
 
-Create & Edit src/gatsby-theme-material-ui/components/TopLayout.js
+Create & Edit src/gatsby-theme-material-ui/components/top-layout.js
 
 ```javascript
 import React from 'react';
 import { Provider } from 'react-redux';
-import ThemeTopLayout from 'gatsby-theme-material-ui/src/components/TopLayout';
+import ThemeTopLayout from 'gatsby-theme-material-ui/src/components/top-layout';
 
 import createStore from '../../state/createStore';
 
