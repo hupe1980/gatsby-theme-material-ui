@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Your Site-Title`,
+    title: `gatsby-theme-material-ui`,
+    description: `Gatsby theme for Material-UI`,
     social: {
       twitter: '',
       github: 'https://github.com/hupe1980/gatsby-theme-material-ui',
@@ -35,5 +36,13 @@ module.exports = {
       }
     }
   ],
-  plugins: [`gatsby-plugin-nprogress`, `gatsby-plugin-netlify`]
+  plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        showSpinner: false
+      }
+    },
+    `gatsby-plugin-netlify`
+  ]
 };

@@ -25,6 +25,6 @@
     "www"
   ],
   "devDependencies": {
-    "lerna": "^3.10.5"
+    "lerna": "^3.13.4"
   }
 }

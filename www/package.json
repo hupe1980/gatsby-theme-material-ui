@@ -7,7 +7,7 @@
     "@material-ui/icons": "next",
     "@material-ui/styles": "next",
     "gatsby": "schema-customization",
-    "gatsby-plugin-netlify": "^2.0.14",
+    "gatsby-plugin-netlify": "^2.0.15",
     "gatsby-plugin-nprogress": "^2.0.10",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-theme-material-ui": "^0.0.18",
