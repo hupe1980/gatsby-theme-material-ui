@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-webfont",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -13,7 +13,5 @@
   "scripts": {},
   "dependencies": {
     "webfontloader": "^1.6.28"
-  },
-  "peerDependencies": {},
-  "devDependencies": {}
+  }
 }

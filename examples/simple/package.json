@@ -1,12 +1,12 @@
 {
   "name": "example-simple",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
     "@material-ui/styles": "next",
     "gatsby": "latest",
-    "gatsby-theme-material-ui": "^0.0.18",
+    "gatsby-theme-material-ui": "^0.0.19",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"
