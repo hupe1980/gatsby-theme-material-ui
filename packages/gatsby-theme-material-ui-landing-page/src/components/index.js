@@ -1,2 +1,2 @@
-export { default } from './hero';
-export { default } from './slides-banner';
+export { default as Hero } from './hero';
+export { default as SlidesBanner } from './slides-banner';

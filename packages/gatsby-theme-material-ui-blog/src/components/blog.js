@@ -42,11 +42,11 @@ export default function Blog({ featuredPosts, posts }) {
       </Grid>
       <Divider />
       <Grid container spacing={5} className={classes.mainGrid}>
-        {posts.map(post => (
-          <Grid item key={post.id} xs={12} md={8}>
-            <Preview post={post} />
-          </Grid>
-        ))}
+        <Grid item xs={12} md={8}>
+          {posts.map(post => (
+            <Preview key={post.id} post={post} />
+          ))}
+        </Grid>
         <Sidebar />
       </Grid>
     </Layout>

@@ -6,7 +6,6 @@ import Content from './content';
 import Footer from './footer';
 
 export default function Layout({ children }) {
-  console.log('Layout');
   return (
     <>
       <SkipLink to={'#maincontent'}>Skip to content</SkipLink>

@@ -14,9 +14,7 @@ export default function Layout({ children }) {
     <>
       <ComponentProvider components={components}>
         <SEO />
-        <Container maxWidth="lg">
-          <main>{children}</main>
-        </Container>
+        <Container maxWidth="lg">{children}</Container>
       </ComponentProvider>
     </>
   );
