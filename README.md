@@ -13,36 +13,12 @@ This repository is a monorepo managed with [Lerna](https://github.com/lerna/lern
 | -------------------------------------------------------------- | -------------------------------------------- |
 | [gatsby-theme-material-ui](/packages/gatsby-theme-material-ui) | Core Theme to support the use of Material-UI |
 
-## Prerequisites
+## Running the examples locally
 
-Use the following tools to set up the project:
-
-- [Node.js](https://nodejs.org/en/)
-
-## Usage
-
-### Installation
-
-Download or clone this repository. To install all dependencies, run this command:
-
-```
-yarn install
-```
-
-### Launch the websites locally
-
-Launch the development server with the hot reloading functionality that allows any change in files in the `src` & `content`folder to be immediately visible in the browser. Run the following command:
+Clone this repo and run yarn in the root directory. To launch the development server with the hot reloading functionality that allows any change in files in the `src` & `content` folder to be immediately visible in the browser. Run the following command:
 
 ```
 yarn start:*
-```
-
-### Build a production-ready website with server-side rendering
-
-To build a production-ready website, run the following command:
-
-```
-yarn build:*
 ```
 
 ## License

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SlideContent from './slide-content';
-import useBannerSlides from '../hooks/use-banner-slides';
+import useBannerSlides from '../../hooks/use-banner-slides';
 
 export default function SlidesBanner() {
   const { bannerDuration, slides } = useBannerSlides();

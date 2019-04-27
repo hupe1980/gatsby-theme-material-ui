@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-plugin-webfont",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "author": "hello@webappsolutions.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hupe1980/gatsby-theme-material-ui"
+  },
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "webfontloader": "^1.6.28"
+  },
+  "peerDependencies": {},
+  "devDependencies": {}
+}

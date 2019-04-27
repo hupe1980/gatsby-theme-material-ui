@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Nav from './nav';
-import SlidesBanner from './slides-banner';
+//import SlidesBanner from './slides-banner';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
@@ -34,7 +34,6 @@ export default function Header() {
       elevation={0}
       className={classes.appBar}
     >
-      <SlidesBanner />
       <Toolbar className={classes.toolbar}>
         <Typography
           variant="h6"

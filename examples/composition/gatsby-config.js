@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Your Site-Title`,
+    description: `Your Site-Description`,
     social: {
       twitter: '',
       github: '',
@@ -12,8 +13,11 @@ module.exports = {
       resolve: 'gatsby-theme-material-ui',
       options: {
         // stylesProvider,
-        // webFontConfig
       }
+    },
+    {
+      resolve: 'gatsby-theme-material-ui-layout',
+      options: {}
     },
     {
       resolve: 'gatsby-theme-material-ui-landing-page',

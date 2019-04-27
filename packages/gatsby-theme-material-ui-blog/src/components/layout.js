@@ -5,9 +5,6 @@ import Container from '@material-ui/core/Container';
 
 import SEO from './seo';
 
-import Header from './header';
-import Footer from './footer';
-
 const components = {
   a: Link
 };
@@ -17,11 +14,9 @@ export default function Layout({ children }) {
     <>
       <ComponentProvider components={components}>
         <SEO />
-        <Header />
         <Container maxWidth="lg">
           <main>{children}</main>
         </Container>
-        <Footer />
       </ComponentProvider>
     </>
   );

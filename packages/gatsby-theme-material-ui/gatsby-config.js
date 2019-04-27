@@ -1,3 +1,5 @@
+const pkg = require('./package.json');
+
 module.exports = themeOptions => {
   const { stylesProvider, webFontConfig } = themeOptions;
   return {
@@ -5,16 +7,21 @@ module.exports = themeOptions => {
       {
         resolve: `gatsby-plugin-material-ui`,
         options: {
-          stylesProvider,
-          webFontConfig
+          stylesProvider
         }
       },
       `gatsby-plugin-react-helmet`,
       {
+        resolve: `gatsby-plugin-webfont`,
+        options: {
+          webFontConfig
+        }
+      },
+      {
         // This is only needed temporarily. Themes will automatically be transpiled in later versions.
         resolve: 'gatsby-plugin-compile-es6-packages',
         options: {
-          modules: ['gatsby-theme-material-ui']
+          modules: [pkg.name]
         }
       }
     ]

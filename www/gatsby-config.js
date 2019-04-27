@@ -17,6 +17,10 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-theme-material-ui-layout',
+      options: {}
+    },
+    {
       resolve: 'gatsby-theme-material-ui-landing-page',
       options: {
         landingPagePath: '/'

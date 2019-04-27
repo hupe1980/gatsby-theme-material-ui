@@ -14,6 +14,7 @@
     "gatsby-theme-material-ui-blog": "^0.0.11",
     "gatsby-theme-material-ui-docs": "^0.0.5",
     "gatsby-theme-material-ui-landing-page": "^0.0.10",
+    "gatsby-theme-material-ui-layout": "^0.0.1",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest"
