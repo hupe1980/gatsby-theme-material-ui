@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-docs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -18,7 +18,7 @@
   "scripts": {},
   "dependencies": {
     "gatsby-plugin-page-creator": "^2.0.12",
-    "gatsby-theme-material-ui": "^0.0.19",
+    "gatsby-theme-material-ui": "^0.0.20",
     "mkdirp": "^0.5.1"
   },
   "peerDependencies": {
