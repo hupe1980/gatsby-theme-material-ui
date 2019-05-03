@@ -1,6 +1,6 @@
-# /gatsby-node.js
-# /gatsby-ssr.js
-# /gatsby-browser.js
+/gatsby-node.js
+/gatsby-ssr.js
+/gatsby-browser.js
 
 # Logs
 logs
