@@ -3,7 +3,8 @@ import globby from 'globby';
 
 export default function Preload({
   format = 'woff2',
-  crossOrigin = 'anonymous'
+  crossOrigin = 'anonymous',
+  pathPrefix = ''
 }) {
   const files = globby.sync(`./public/webfonts/**/*.${format}`);
   const preloads = files.map((file, key) => (
@@ -13,7 +14,7 @@ export default function Preload({
       as="font"
       type={`font/${format}`}
       crossOrigin={crossOrigin}
-      href={file}
+      href={file.replace(`./public`, pathPrefix)}
     />
   ));
 
