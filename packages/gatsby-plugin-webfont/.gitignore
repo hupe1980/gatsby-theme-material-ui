@@ -1,6 +1,7 @@
 /gatsby-node.js
 /gatsby-ssr.js
 /gatsby-browser.js
+/web-font.js
 
 # Logs
 logs

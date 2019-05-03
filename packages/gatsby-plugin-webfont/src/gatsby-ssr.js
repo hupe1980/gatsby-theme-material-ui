@@ -8,12 +8,12 @@ export const onRenderBody = ({ setHeadComponents }) => {
   );
 
   setHeadComponents([
-    <link
-      rel="preconnect"
-      key="preconnect-fonts.googleapis.com"
-      href="https://fonts.googleapis.com"
-      crossOrigin="anonymous"
-    />,
+    // <link
+    //   rel="preconnect"
+    //   key="preconnect-fonts.googleapis.com"
+    //   href="https://fonts.googleapis.com"
+    //   crossOrigin="anonymous"
+    // />,
     <style
       key="googleFontsCss"
       type="text/css"
