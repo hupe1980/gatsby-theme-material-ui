@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function SkipLink(props) {
+export default function SkipNav(props) {
   const classes = useStyles();
-  return <Link className={classes.skipLink} {...props} />;
+  return <Link className={classes.skipLink} to={'#maincontent'} {...props} />;
 }

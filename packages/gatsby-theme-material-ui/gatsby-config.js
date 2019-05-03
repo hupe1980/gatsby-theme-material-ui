@@ -1,7 +1,19 @@
 const pkg = require('./package.json');
 
+const defaultWebFontConfig = {
+  fonts: {
+    google: [
+      {
+        family: 'Roboto',
+        variants: ['300', '400', '500']
+      }
+    ]
+  }
+};
+
 module.exports = themeOptions => {
-  const { stylesProvider, webFontConfig } = themeOptions;
+  const { stylesProvider, webFontConfig = defaultWebFontConfig } = themeOptions;
+
   return {
     plugins: [
       {
@@ -14,7 +26,7 @@ module.exports = themeOptions => {
       {
         resolve: `gatsby-plugin-webfont`,
         options: {
-          webFontConfig
+          ...webFontConfig
         }
       },
       {

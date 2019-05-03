@@ -7,6 +7,7 @@ export default () => {
         siteMetadata {
           title
           description
+          lang
           social {
             twitter
             github

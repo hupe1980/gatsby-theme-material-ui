@@ -11,11 +11,11 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Nav() {
+export default function LeftLinks() {
   const classes = useStyles();
 
   return (
-    <nav>
+    <>
       <Link
         variant="button"
         color="textPrimary"
@@ -32,15 +32,6 @@ export default function Nav() {
       >
         Blog
       </Link>
-      <IconButtonLink
-        href="https://github.com/hupe1980/gatsby-theme-material-ui"
-        title="GitHub"
-      >
-        <GitHubIcon />
-      </IconButtonLink>
-      <IconButtonLink href="https://twitter.com/hupe1980" title="Twitter">
-        <TwitterIcon />
-      </IconButtonLink>
-    </nav>
+    </>
   );
 }

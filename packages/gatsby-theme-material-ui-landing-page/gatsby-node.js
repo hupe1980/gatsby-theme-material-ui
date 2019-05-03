@@ -55,7 +55,7 @@ exports.onPreBootstrap = ({ store }, opts) => {
 
   const dirs = [
     path.join(program.directory, `content`, opts.banner || `banner`),
-    path.join(program.directory, `content`, opts.sections || `sections`)
+    path.join(program.directory, `content`, opts.pages || `pages`)
   ];
 
   dirs.forEach(dir => {

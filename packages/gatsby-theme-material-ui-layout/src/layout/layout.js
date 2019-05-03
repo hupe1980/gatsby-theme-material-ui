@@ -1,6 +1,7 @@
 import React from 'react';
 
-import SkipLink from './skip-link';
+import NProgressBar from '../components/nprogress-bar';
+import SkipNav from '../components/skip-nav';
 import Header from './header';
 import Content from './content';
 import Footer from './footer';
@@ -8,7 +9,9 @@ import Footer from './footer';
 export default function Layout({ children }) {
   return (
     <>
-      <SkipLink to={'#maincontent'}>Skip to content</SkipLink>
+      <NProgressBar />
+      <SkipNav>Skip to content</SkipNav>
+      {/* <Banner /> */}
       <Header />
       <Content>{children}</Content>
       <Footer />

@@ -5,6 +5,7 @@ export default () => {
     {
       site {
         siteMetadata {
+          lang
           title
           description
         }

@@ -6,14 +6,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 
-function MadeWithLove() {
+function BuildWith() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
+      {'Built with '}
       <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
+        gatsby-theme-material-ui
       </Link>
-      {' team.'}
     </Typography>
   );
 }
@@ -83,8 +82,8 @@ export default function Footer() {
           </Grid>
         ))}
       </Grid>
-      <Box mt={5}>
-        <MadeWithLove />
+      <Box mt={5} className={classes.subFooter}>
+        <BuildWith />
       </Box>
     </Container>
   );

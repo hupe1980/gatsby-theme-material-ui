@@ -1,17 +1,40 @@
 {
   "name": "gatsby-plugin-webfont",
   "version": "0.0.2",
-  "description": "",
+  "description": "A Gatsby plugin to handle webfonts",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
   "repository": {
     "type": "git",
     "url": "https://github.com/hupe1980/gatsby-theme-material-ui"
   },
-  "keywords": [],
+  "keywords": [
+    "gatsby-plugin",
+    "gatsby",
+    "plugin",
+    "web",
+    "font",
+    "loader",
+    "google",
+    "webfont",
+    "webfontloader"
+  ],
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
   "dependencies": {
-    "webfontloader": "^1.6.28"
+    "axios": "^0.18.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.14",
+    "postcss-js": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "cross-env": "^5.2.0"
   }
 }

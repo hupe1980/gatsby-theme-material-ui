@@ -7,8 +7,8 @@ module.exports = themeOptions => {
       {
         resolve: `gatsby-source-filesystem`,
         options: {
-          path: path.join(`content`, `banner`),
-          name: `banner`
+          path: path.join(`content`, `images`),
+          name: `images`
         }
       }
     ]

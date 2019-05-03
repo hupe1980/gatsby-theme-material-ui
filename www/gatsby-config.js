@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    lang: `en`,
     title: `gatsby-theme-material-ui`,
     description: `Gatsby theme for Material-UI`,
     social: {
@@ -42,9 +43,9 @@ module.exports = {
   ],
   plugins: [
     {
-      resolve: `gatsby-plugin-nprogress`,
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        showSpinner: false
+        modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
     `gatsby-plugin-netlify`
