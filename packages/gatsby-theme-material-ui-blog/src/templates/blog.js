@@ -56,7 +56,7 @@ export const pageQuery = graphql`
             img {
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
             }
