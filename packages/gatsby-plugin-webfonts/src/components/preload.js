@@ -7,6 +7,7 @@ export default function Preload({
   pathPrefix = ''
 }) {
   const files = globby.sync(`./public/webfonts/**/*.${format}`);
+
   const preloads = files.map((file, key) => (
     <link
       key={`webfonts${key}`}
