@@ -24,7 +24,8 @@ const defaultOptions = {
 
 const defaultFontConfig = {
   fontDisplay: 'swap',
-  useEncode: false
+  useEncode: false,
+  useDownload: true
 };
 
 const DEFAULT_API_URL = `https://fonts.googleapis.com/css`;

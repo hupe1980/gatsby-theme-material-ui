@@ -1,14 +1,14 @@
-# gatsby-plugin-webfont
+# gatsby-plugin-webfonts
 
 > A [Gatsby](https://github.com/gatsbyjs/gatsby) plugin to handle webfonts:
 
 - Creates minified @font-face CSS rules
 - Supports font-display property (Default: 'swap')
-- Handles preconnect or preload optimizations
+- Handles preconnect and preload optimizations
 
 ## Install
 
-`npm install --save gatsby-plugin-webfont`
+`npm install --save gatsby-plugin-webfonts`
 
 ## How to use
 
@@ -18,7 +18,7 @@ Edit `gatsby-config.js`
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-webfont`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
           google: [
@@ -46,7 +46,7 @@ Using [Google's Font API](https://code.google.com/apis/webfonts/docs/getting_sta
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-webfont`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
           google: [
@@ -72,7 +72,7 @@ You can also supply the text parameter to perform character subsetting:
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-webfont`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
           google: [

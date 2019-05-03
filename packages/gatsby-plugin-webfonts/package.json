@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-webfont",
+  "name": "gatsby-plugin-webfonts",
   "version": "0.0.2",
   "description": "A Gatsby plugin to handle webfonts",
   "license": "MIT",
@@ -29,6 +29,7 @@
     "axios": "^0.18.0",
     "cssnano": "^4.1.10",
     "fs-extra": "^7.0.1",
+    "globby": "^9.2.0",
     "postcss": "^7.0.14",
     "postcss-js": "^2.0.1"
   },

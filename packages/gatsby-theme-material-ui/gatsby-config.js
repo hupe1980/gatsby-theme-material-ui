@@ -24,7 +24,7 @@ module.exports = themeOptions => {
       },
       `gatsby-plugin-react-helmet`,
       {
-        resolve: `gatsby-plugin-webfont`,
+        resolve: `gatsby-plugin-webfonts`,
         options: {
           ...webFontConfig
         }
