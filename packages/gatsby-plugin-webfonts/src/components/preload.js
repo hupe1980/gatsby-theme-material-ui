@@ -9,7 +9,7 @@ export default function Preload({
 }) {
   if (disabled) return null;
 
-  const files = globby.sync(`./public/webfonts/**/*.${format}`);
+  const files = globby.sync(`./public/static/webfonts/**/*.${format}`);
 
   const preloads = files.map((file, key) => (
     <link

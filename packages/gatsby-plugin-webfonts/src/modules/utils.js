@@ -74,7 +74,7 @@ export async function replaceFonts(css, dir) {
 
       await fs.outputFile(filePath, font);
 
-      return path.join('/', 'webfonts', pathname);
+      return `/static/webfonts/${pathname}`;
     })
   );
 
