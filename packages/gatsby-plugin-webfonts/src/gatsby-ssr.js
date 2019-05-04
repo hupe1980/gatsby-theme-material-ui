@@ -19,7 +19,7 @@ export const onRenderBody = (
     //   key="webFontsPreconnectGoogleFonts"
     //   href="https://fonts.googleapis.com"
     // />,
-    <Preload key="webFontsPreload" pathPrefix={pathPrefix} />,
+    // <Preload key="webFontsPreload" pathPrefix={pathPrefix} />,
     <Css key="webFontsCss" css={css} />
   ]);
 };
