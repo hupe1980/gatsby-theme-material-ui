@@ -1,24 +1,19 @@
 import path from 'path';
 import fs from 'fs-extra';
 
-import WebFont from './web-font';
+import createOptions from './create-options';
+import webFonts from './web-fonts';
 
-export const onPreBootstrap = async ({ store, pathPrefix }, options) => {
-  const webFont = new WebFont(options);
-
-  let css = await webFont.getCss();
-
+export const onPreBootstrap = async ({ store, pathPrefix }, pluginOptions) => {
   const { directory } = store.getState().program;
 
-  const dir = path.join(directory, '.cache', 'webfonts');
+  const cacheFolder = path.join(directory, '.cache', 'webfonts');
 
-  css = await webFont.downloadFonts(css, dir);
+  const options = createOptions({ ...pluginOptions, cacheFolder });
 
-  const filePath = path.join(dir, `webfonts.css`);
-
-  await fs.outputFile(filePath, css);
+  await webFonts(options);
 
   const filter = src => path.extname(src) !== '.css';
 
-  await fs.copy(dir, `./public/webfonts`, { filter });
+  await fs.copy(cacheFolder, `./public/webfonts`, { filter });
 };
