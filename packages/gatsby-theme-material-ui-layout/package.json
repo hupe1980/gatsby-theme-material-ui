@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-layout",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -17,7 +17,7 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-theme-material-ui": "^0.0.20",
+    "gatsby-theme-material-ui": "^0.0.21",
     "nprogress": "^0.2.0"
   },
   "peerDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-webfonts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Gatsby plugin to handle webfonts",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
