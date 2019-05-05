@@ -10,9 +10,13 @@ const useStyles = makeStyles(theme => ({
   button: {
     minWidth: 200
   },
+  header: {
+    backgroundColor: theme.palette.secondary.main
+  },
   h5: {
     marginBottom: theme.spacing(4),
-    marginTop: theme.spacing(4)
+    marginTop: theme.spacing(4),
+    backgroundColor: theme.palette.secondary.main
   }
 }));
 
@@ -21,7 +25,7 @@ export default function Hero({ header, subHeader }) {
 
   return (
     <HeroLayout>
-      <Header>{header}</Header>
+      <Header className={classes.header}>{header}</Header>
       <Typography
         color="inherit"
         align="center"

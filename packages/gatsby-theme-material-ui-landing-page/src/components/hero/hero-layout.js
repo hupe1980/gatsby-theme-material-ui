@@ -35,7 +35,7 @@ export default function HeroLayout({ children }) {
         query {
           desktop: file(relativePath: { eq: "hero-bg.jpg" }) {
             childImageSharp {
-              fluid(quality: 90, maxWidth: 4160) {
+              fluid(quality: 75) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }

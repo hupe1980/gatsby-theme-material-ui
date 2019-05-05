@@ -17,10 +17,10 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-background-image": "^0.4.1",
-    "gatsby-source-filesystem": "^2.0.29",
+    "gatsby-background-image": "^0.5.3",
+    "gatsby-source-filesystem": "^2.0.33",
     "gatsby-theme-material-ui": "^0.0.21",
-    "gatsby-transformer-yaml": "^2.1.11",
+    "gatsby-transformer-yaml": "^2.1.12",
     "mkdirp": "^0.5.1"
   },
   "peerDependencies": {

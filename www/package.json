@@ -7,10 +7,12 @@
     "@material-ui/icons": "next",
     "@material-ui/styles": "next",
     "classnames": "^2.2.6",
-    "gatsby": "schema-customization",
-    "gatsby-plugin-netlify": "^2.0.15",
-    "gatsby-plugin-netlify-cms": "^3.0.18",
-    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby": "2.4.2",
+    "gatsby-plugin-google-analytics": "^2.0.19",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-netlify": "^2.0.16",
+    "gatsby-plugin-netlify-cms": "^4.0.0",
+    "gatsby-plugin-offline": "^2.1.0",
     "gatsby-theme-material-ui": "^0.0.21",
     "gatsby-theme-material-ui-blog": "^0.0.14",
     "gatsby-theme-material-ui-docs": "^0.0.8",
@@ -19,7 +21,7 @@
     "netlify-cms": "^2.9.1",
     "react": "latest",
     "react-dom": "latest",
-    "react-helmet": "latest"
+    "react-helmet": "5.2.1"
   },
   "scripts": {
     "start": "gatsby develop",

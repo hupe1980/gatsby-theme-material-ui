@@ -5,12 +5,12 @@
   "dependencies": {
     "@material-ui/core": "next",
     "@material-ui/styles": "next",
-    "gatsby": "latest",
+    "gatsby": "2.4.2",
     "gatsby-theme-material-ui": "^0.0.21",
     "react": "latest",
     "react-dom": "latest",
-    "react-helmet": "latest",
-    "react-redux": "^7.0.2",
+    "react-helmet": "5.2.1",
+    "react-redux": "^7.0.3",
     "redux": "^4.0.1"
   },
   "scripts": {

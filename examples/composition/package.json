@@ -6,7 +6,7 @@
     "@material-ui/core": "next",
     "@material-ui/icons": "next",
     "@material-ui/styles": "next",
-    "gatsby": "latest",
+    "gatsby": "2.4.2",
     "gatsby-theme-material-ui": "^0.0.21",
     "gatsby-theme-material-ui-album": "^0.0.8",
     "gatsby-theme-material-ui-blog": "^0.0.14",
@@ -15,7 +15,7 @@
     "gatsby-theme-material-ui-pricing": "^0.0.8",
     "react": "latest",
     "react-dom": "latest",
-    "react-helmet": "latest"
+    "react-helmet": "5.2.1"
   },
   "scripts": {
     "start": "gatsby develop",
