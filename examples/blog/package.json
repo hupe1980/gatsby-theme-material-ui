@@ -1,15 +1,15 @@
 {
   "name": "example-blog",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "private": true,
   "dependencies": {
     "@material-ui/core": "next",
     "@material-ui/icons": "next",
     "@material-ui/styles": "next",
     "gatsby": "2.4.2",
-    "gatsby-theme-material-ui": "^0.0.21",
-    "gatsby-theme-material-ui-blog": "^0.0.14",
-    "gatsby-theme-material-ui-layout": "^0.0.4",
+    "gatsby-theme-material-ui": "^0.0.22",
+    "gatsby-theme-material-ui-blog": "^0.0.15",
+    "gatsby-theme-material-ui-layout": "^0.0.5",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "5.2.1"

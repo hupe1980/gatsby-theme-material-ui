@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-landing-page",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -19,7 +19,7 @@
   "dependencies": {
     "gatsby-background-image": "^0.5.3",
     "gatsby-source-filesystem": "^2.0.33",
-    "gatsby-theme-material-ui": "^0.0.21",
+    "gatsby-theme-material-ui": "^0.0.22",
     "gatsby-transformer-yaml": "^2.1.12",
     "mkdirp": "^0.5.1"
   },

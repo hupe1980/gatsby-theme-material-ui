@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-pricing",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "author": "hello@webappsolutions.de",
@@ -17,7 +17,7 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-theme-material-ui": "^0.0.21",
+    "gatsby-theme-material-ui": "^0.0.22",
     "mkdirp": "^0.5.1"
   },
   "peerDependencies": {
