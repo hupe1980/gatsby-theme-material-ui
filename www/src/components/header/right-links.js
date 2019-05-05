@@ -1,13 +1,13 @@
 import React from 'react';
-import { IconButtonLink, Link } from 'gatsby-theme-material-ui/components';
 import { makeStyles } from '@material-ui/core/styles';
+import { IconButton } from 'gatsby-theme-material-ui/components';
 
 import GitHubIcon from '../../svg-icons/github-icon';
 import TwitterIcon from '../../svg-icons/twitter-icon';
 
 const useStyles = makeStyles(theme => ({
-  link: {
-    margin: theme.spacing(1, 1.5)
+  icon: {
+    color: theme.palette.common.white
   }
 }));
 
@@ -16,15 +16,15 @@ export default function RightLinks() {
 
   return (
     <>
-      <IconButtonLink
+      <IconButton
         href="https://github.com/hupe1980/gatsby-theme-material-ui"
         title="GitHub"
       >
-        <GitHubIcon />
-      </IconButtonLink>
-      <IconButtonLink href="https://twitter.com/hupe1980" title="Twitter">
-        <TwitterIcon />
-      </IconButtonLink>
+        <GitHubIcon className={classes.icon} />
+      </IconButton>
+      <IconButton href="https://twitter.com/hupe1980" title="Twitter">
+        <TwitterIcon className={classes.icon} />
+      </IconButton>
     </>
   );
 }

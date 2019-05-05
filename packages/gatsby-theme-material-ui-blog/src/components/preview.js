@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { CardActionAreaLink } from 'gatsby-theme-material-ui/components';
+import { CardActionArea } from 'gatsby-theme-material-ui/components';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -26,7 +26,7 @@ export default function Preview({ post }) {
   const classes = useStyles();
 
   return (
-    <CardActionAreaLink to={post.fields.slug}>
+    <CardActionArea to={post.fields.slug}>
       <Card className={classes.card}>
         <Hidden xsDown>
           <Img
@@ -52,6 +52,6 @@ export default function Preview({ post }) {
           </CardContent>
         </div>
       </Card>
-    </CardActionAreaLink>
+    </CardActionArea>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
 
 import BackgroundImage from 'gatsby-background-image';
 import { makeStyles } from '@material-ui/core/styles';
@@ -45,14 +46,21 @@ export default function HeroLayout({ children }) {
       render={data => {
         const imageData = data.desktop.childImageSharp.fluid;
         return (
-          <BackgroundImage
+          <Paper
+            component="section"
+            className={classes.root}
+            elevation={0}
+            square
+          >
+            {/* <BackgroundImage
             Tag="section"
             className={classes.root}
             fluid={imageData}
             backgroundColor={`#040e18`}
-          >
+          > */}
             <Container className={classes.container}> {children}</Container>
-          </BackgroundImage>
+            {/* </BackgroundImage> */}
+          </Paper>
         );
       }}
     />

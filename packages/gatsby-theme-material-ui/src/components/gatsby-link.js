@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 
 function ALink({ to, children, ...other }) {
   return (
@@ -9,13 +9,10 @@ function ALink({ to, children, ...other }) {
   );
 }
 
-function GastsbyLink({
-  to,
-  activeClassName,
-  partiallyActive,
-  innerRef,
-  ...other
-}) {
+const Link = React.forwardRef(function Link(
+  { to, activeClassName, partiallyActive, ...other },
+  ref
+) {
   const internal = /^\/(?!\/)/.test(to);
 
   // Use Gatsby Link for internal links, and <a> for others
@@ -26,16 +23,16 @@ function GastsbyLink({
       return <ALink href={to} {...other} />;
     }
     return (
-      <Link
+      <GatsbyLink
         to={to}
         activeClassName={activeClassName}
         partiallyActive={partiallyActive}
-        innerRef={innerRef}
+        innerRef={ref}
         {...other}
       />
     );
   }
   return <ALink href={to} {...other} />;
-}
+});
 
-export default GastsbyLink;
+export default Link;

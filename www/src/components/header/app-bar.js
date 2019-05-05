@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
+import { Button } from 'gatsby-theme-material-ui/components';
 import MuiAppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
@@ -105,7 +105,11 @@ export default function AppBar({
     [classes.fixed]: fixed
   });
 
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = (
+    <Button to="/" className={classes.title}>
+      {brand}
+    </Button>
+  );
 
   return (
     <MuiAppBar className={appBarClasses}>
