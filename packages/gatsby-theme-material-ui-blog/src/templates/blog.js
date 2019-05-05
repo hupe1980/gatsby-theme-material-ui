@@ -11,25 +11,22 @@ export default props => {
   } = props;
 
   const posts = edges
-    .filter(
-      ({ node }) =>
-        node.parent.sourceInstanceName === 'posts' && !node.frontmatter.featured
-    )
+    .filter(({ node }) => !node.frontmatter.featured)
     .map(edge => edge.node);
 
   const featuredPosts = edges
-    .filter(
-      ({ node }) =>
-        node.parent.sourceInstanceName === 'posts' && node.frontmatter.featured
-    )
+    .filter(({ node }) => node.frontmatter.featured)
     .map(edge => edge.node);
 
   return <Blog featuredPosts={featuredPosts} posts={posts} />;
 };
 
 export const pageQuery = graphql`
-  query PostList {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+  query Posts {
+    allMdx(
+      filter: { fields: { sourceName: { eq: "posts" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           id
@@ -37,16 +34,7 @@ export const pageQuery = graphql`
             slug
           }
           excerpt(pruneLength: 150)
-          code {
-            body
-          }
           timeToRead
-          parent {
-            ... on File {
-              name
-              sourceInstanceName
-            }
-          }
           frontmatter {
             datePublished: date(formatString: "YYYY-MM-DDTHH:mm:ssZ")
             featured

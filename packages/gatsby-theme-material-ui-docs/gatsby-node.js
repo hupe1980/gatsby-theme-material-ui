@@ -14,6 +14,25 @@ exports.createPages = async ({ graphql, actions }, pluginOptions) => {
   });
 };
 
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+
+  if (node.internal.type === `Mdx`) {
+    const parent = getNode(node.parent);
+
+    if (
+      parent.internal.type === 'File' &&
+      parent.sourceInstanceName === 'components'
+    ) {
+      createNodeField({
+        name: `sourceName`,
+        node,
+        value: parent.sourceInstanceName
+      });
+    }
+  }
+};
+
 exports.onPreBootstrap = ({ store }, opts) => {
   const { program } = store.getState();
 

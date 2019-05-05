@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
-import { Button } from 'gatsby-theme-material-ui/components';
 import MuiAppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Hidden from '@material-ui/core/Hidden';
@@ -39,18 +38,6 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexWrap: 'nowrap'
   },
-  title: {
-    lineHeight: '30px',
-    fontSize: '18px',
-    borderRadius: '3px',
-    textTransform: 'none',
-    color: 'inherit',
-    padding: '8px 16px',
-    '&:hover,&:focus': {
-      color: 'inherit',
-      background: 'transparent'
-    }
-  },
   appResponsive: {
     margin: '20px 10px'
   }
@@ -61,7 +48,7 @@ export default function AppBar({
   color,
   rightLinks,
   leftLinks,
-  brand = 'COMPANY NAME',
+  title,
   fixed,
   absolute
 }) {
@@ -105,23 +92,17 @@ export default function AppBar({
     [classes.fixed]: fixed
   });
 
-  const brandComponent = (
-    <Button to="/" className={classes.title}>
-      {brand}
-    </Button>
-  );
-
   return (
     <MuiAppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
-        {leftLinks !== undefined ? brandComponent : null}
+        {leftLinks !== undefined ? title : null}
         <Box flex="1">
           {leftLinks !== undefined ? (
             <Hidden smDown implementation="css">
               {leftLinks}
             </Hidden>
           ) : (
-            brandComponent
+            title
           )}
         </Box>
         <Hidden smDown implementation="css">

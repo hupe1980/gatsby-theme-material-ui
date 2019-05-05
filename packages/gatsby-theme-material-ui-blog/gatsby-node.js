@@ -24,22 +24,25 @@ exports.onCreateNode = ({ node, getNode, actions }, pluginOptions) => {
   if (node.internal.type === `Mdx`) {
     const parent = getNode(node.parent);
 
-    if (parent.internal.type === 'File') {
+    if (
+      parent.internal.type === 'File' &&
+      parent.sourceInstanceName === 'posts'
+    ) {
       createNodeField({
         name: `sourceName`,
         node,
         value: parent.sourceInstanceName
       });
-    }
 
-    if (node.frontmatter.slug) {
-      const slug = path.join(blogPath, node.frontmatter.slug);
+      if (node.frontmatter.slug) {
+        const slug = path.join(blogPath, node.frontmatter.slug);
 
-      createNodeField({
-        node,
-        name: `slug`,
-        value: slug
-      });
+        createNodeField({
+          node,
+          name: `slug`,
+          value: slug
+        });
+      }
     }
   }
 };

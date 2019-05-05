@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link as GatsbyLink } from 'gatsby';
 
-function ALink({ to, children, ...other }) {
+function ALink({ to, children, innerRef, ...other }) {
   return (
-    <a href={to} {...other}>
-      {children}{' '}
+    <a href={to} ref={innerRef} {...other}>
+      {children}
     </a>
   );
 }
@@ -20,7 +20,7 @@ const Link = React.forwardRef(function Link(
     const file = /\.[0-9a-z]+$/i.test(to);
 
     if (file) {
-      return <ALink href={to} {...other} />;
+      return <ALink href={to} innerRef={ref} {...other} />;
     }
     return (
       <GatsbyLink
@@ -32,7 +32,9 @@ const Link = React.forwardRef(function Link(
       />
     );
   }
-  return <ALink href={to} {...other} />;
+  return <ALink href={to} innerRef={ref} {...other} />;
 });
+
+Link.displayName = 'Link';
 
 export default Link;

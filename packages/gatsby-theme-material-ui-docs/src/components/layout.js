@@ -1,15 +1,12 @@
 import React from 'react';
 
-import Header from './header';
-import Main from './main';
-import Footer from './footer';
+import Sidebar from './sidebar';
 
 export default function Layout({ children }) {
   return (
     <>
-      <Header />
-      <Main>{children}</Main>
-      <Footer />
+      <Sidebar />
+      {children}
     </>
   );
 }
