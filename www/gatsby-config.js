@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     lang: `en`,
-    title: `gatsby-theme-material-ui`,
+    title: `GT-MUI`,
     description: `Gatsby theme for Material-UI`,
     siteUrl: `https://gatsby-theme-material-ui.netlify.com/`,
     social: {
@@ -49,6 +49,16 @@ module.exports = {
         trackingId: `UA-139603907-1`,
         anonymize: true,
         respectDNT: true
+      }
+    },
+    {
+      resolve: `gatsby-plugin-performance-metrics`,
+      options: {
+        firstPaint: true,
+        firstContentfulPaint: true,
+        firstInputDelay: true,
+        useLogging: true,
+        useGoogleAnalytics: true
       }
     },
     {

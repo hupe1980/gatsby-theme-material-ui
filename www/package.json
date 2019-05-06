@@ -13,6 +13,7 @@
     "gatsby-plugin-netlify": "^2.0.16",
     "gatsby-plugin-netlify-cms": "^4.0.0",
     "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-performance-metrics": "^1.0.0",
     "gatsby-theme-material-ui": "^0.0.22",
     "gatsby-theme-material-ui-blog": "^0.0.15",
     "gatsby-theme-material-ui-docs": "^0.0.9",
