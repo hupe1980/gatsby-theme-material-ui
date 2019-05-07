@@ -1,3 +1,5 @@
+const fsExpressAPI = require('netlify-cms-backend-fs/dist/fs');
+
 module.exports = {
   siteMetadata: {
     lang: `en`,
@@ -64,7 +66,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        enableIdentityWidget: false,
+        publicPath: 'admin',
+        htmlTitle: 'Content Manager',
+        manualInit: true
       }
     },
     `gatsby-plugin-netlify`,
@@ -81,5 +87,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`
-  ]
+  ],
+  developMiddleware: fsExpressAPI
 };

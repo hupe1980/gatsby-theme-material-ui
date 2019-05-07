@@ -13,7 +13,7 @@ export default function Layout({ children }) {
   return (
     <>
       <ComponentProvider components={components}>
-        <SEO />
+        {/* <SEO /> */}
         <Container maxWidth="lg">{children}</Container>
       </ComponentProvider>
     </>
