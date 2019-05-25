@@ -3,9 +3,9 @@
   "version": "1.0.12",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "next",
-    "@material-ui/styles": "next",
-    "gatsby": "2.4.2",
+    "@material-ui/core": "4.0.0",
+    "@material-ui/styles": "4.0.0",
+    "gatsby": "2.7.1",
     "gatsby-theme-material-ui": "^0.0.22",
     "react": "latest",
     "react-dom": "latest",

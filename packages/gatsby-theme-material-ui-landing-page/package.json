@@ -17,8 +17,8 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "gatsby-background-image": "^0.5.3",
-    "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-background-image": "^0.6.2",
+    "gatsby-source-filesystem": "^2.0.37",
     "gatsby-theme-material-ui": "^0.0.22",
     "gatsby-transformer-yaml": "^2.1.12",
     "mkdirp": "^0.5.1"

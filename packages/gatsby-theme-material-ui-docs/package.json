@@ -17,11 +17,11 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "@mdx-js/mdx": "^1.0.16",
+    "@mdx-js/mdx": "^1.0.19",
     "@mdx-js/react": "^1.0.16",
     "gatsby-mdx": "0.6.3",
-    "gatsby-plugin-page-creator": "^2.0.12",
-    "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-plugin-page-creator": "^2.0.13",
+    "gatsby-source-filesystem": "^2.0.37",
     "gatsby-theme-material-ui": "^0.0.22",
     "mkdirp": "^0.5.1"
   },

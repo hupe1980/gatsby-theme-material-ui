@@ -1,13 +1,5 @@
-import React from 'react';
-import MuiButton from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 
-import GatsbyLink from './gatsby-link';
+import patchBaseButtonComponent from '../utils/patch-base-button-components';
 
-function Button(props) {
-  const { to, href } = props;
-  const component = to || href ? GatsbyLink : 'button';
-
-  return <MuiButton component={component} {...props} />;
-}
-
-export default Button;
+export default patchBaseButtonComponent(Button);

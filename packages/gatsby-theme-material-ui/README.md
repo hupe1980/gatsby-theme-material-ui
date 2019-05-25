@@ -1,7 +1,7 @@
 # gatsby-theme-material-ui
 
 > A [Gatsby](https://github.com/gatsbyjs/gatsby) theme for
-> [Material-UI](https://github.com/mui-org/material-ui)
+> [Material-UI](https://github.com/mui-org/material-ui): The fastest way to build server-side rendered Material-UI websites
 
 :warning: This is experimental and subject to breaking changes.
 

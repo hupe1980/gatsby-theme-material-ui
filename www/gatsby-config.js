@@ -1,5 +1,3 @@
-const fsExpressAPI = require('netlify-cms-backend-fs/dist/fs');
-
 module.exports = {
   siteMetadata: {
     lang: `en`,
@@ -42,6 +40,10 @@ module.exports = {
       options: {
         docsPath: '/docs'
       }
+    },
+    {
+      resolve: `gatsby-theme-netlify-cms`,
+      options: {}
     }
   ],
   plugins: [
@@ -64,17 +66,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-        enableIdentityWidget: false,
-        publicPath: 'admin',
-        htmlTitle: 'Content Manager',
-        manualInit: true
-      }
-    },
-    `gatsby-plugin-netlify`,
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-theme-material-ui`,
@@ -87,6 +78,5 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`
-  ],
-  developMiddleware: fsExpressAPI
+  ]
 };

@@ -1,6 +1,5 @@
 {
-  "name": "gatsby-theme-material-ui-root",
-  "version": "1.0.0",
+  "name": "root",
   "private": true,
   "author": "hello@webappsolutions.de",
   "license": "MIT",
@@ -25,6 +24,6 @@
     "www"
   ],
   "devDependencies": {
-    "lerna": "^3.13.4"
+    "lerna": "^3.14.1"
   }
 }

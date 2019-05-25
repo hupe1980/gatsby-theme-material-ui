@@ -1,7 +1,7 @@
 # gatsby-theme-material-ui
 
 > [Gatsby](https://github.com/gatsbyjs/gatsby) themes for
-> [Material-UI](https://github.com/mui-org/material-ui)
+> [Material-UI](https://github.com/mui-org/material-ui): The fastest way to build server-side rendered Material-UI websites
 
 :warning: This is experimental and subject to breaking changes.
 
@@ -15,7 +15,13 @@ This repository is a monorepo managed with [Lerna](https://github.com/lerna/lern
 
 ## Running the examples locally
 
-Clone this repo and run yarn in the root directory. To launch the development server with the hot reloading functionality that allows any change in files in the `src` & `content` folder to be immediately visible in the browser. Run the following command:
+Clone this repo and run yarn in the root directory.
+
+```
+yarn
+```
+
+To launch the development server with the hot reloading functionality that allows any change in files in the `src` & `content` folder to be immediately visible in the browser. Run the following command:
 
 ```
 yarn start:*
