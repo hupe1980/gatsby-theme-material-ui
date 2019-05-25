@@ -77,6 +77,7 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`
       }
     },
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`
   ]
 };
