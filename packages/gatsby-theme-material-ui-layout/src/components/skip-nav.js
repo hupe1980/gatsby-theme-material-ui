@@ -1,6 +1,6 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/styles';
-import { Link } from 'gatsby-theme-material-ui/components';
+import React from "react";
+import { makeStyles } from "@material-ui/styles";
+import { Link } from "gatsby-theme-material-ui";
 
 const useStyles = makeStyles(theme => ({
   skipLink: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     overflow: `hidden`,
     position: `absolute`,
     zIndex: 100,
-    '&:focus': {
+    "&:focus": {
       padding: theme.spacing(2),
       position: `fixed`,
       top: theme.spacing(4),
@@ -23,12 +23,12 @@ const useStyles = makeStyles(theme => ({
       textDecoration: `none`,
       width: `auto`,
       height: `auto`,
-      clip: `auto`
-    }
-  }
+      clip: `auto`,
+    },
+  },
 }));
 
 export default function SkipNav(props) {
   const classes = useStyles();
-  return <Link className={classes.skipLink} to={'#maincontent'} {...props} />;
+  return <Link className={classes.skipLink} to={`#maincontent`} {...props} />;
 }

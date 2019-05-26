@@ -1,14 +1,14 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { IconButton } from 'gatsby-theme-material-ui/components';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { IconButton } from "gatsby-theme-material-ui";
 
-import GitHubIcon from '../../svg-icons/github-icon';
-import TwitterIcon from '../../svg-icons/twitter-icon';
+import GitHubIcon from "../../svg-icons/github-icon";
+import TwitterIcon from "../../svg-icons/twitter-icon";
 
 const useStyles = makeStyles(theme => ({
   icon: {
-    color: theme.palette.common.white
-  }
+    color: theme.palette.common.white,
+  },
 }));
 
 export default function RightLinks() {

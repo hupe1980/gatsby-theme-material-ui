@@ -1,4 +1,0 @@
-type BlogOptions {
-  blogPath: String
-  useFeaturedPosts: Boolean
-}

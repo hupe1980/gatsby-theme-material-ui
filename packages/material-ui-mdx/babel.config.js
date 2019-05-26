@@ -5,17 +5,17 @@ const PRODUCTION = (BABEL_ENV || NODE_ENV) === `production`;
 module.exports = {
   presets: [
     [
-      '@babel/env',
+      `@babel/env`,
       {
         loose: true,
         useBuiltIns: false,
         shippedProposals: true,
         modules: `commonjs`,
         targets: {
-          browsers: ['>0.25%', 'not dead']
-        }
-      }
+          browsers: [`>0.25%`, `not dead`],
+        },
+      },
     ],
-    ['@babel/react', { development: !PRODUCTION }]
-  ]
+    [`@babel/react`, { development: !PRODUCTION }],
+  ],
 };

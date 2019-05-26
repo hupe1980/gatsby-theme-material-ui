@@ -1,0 +1,9 @@
+/.git
+/coverage
+/e2e-tests/**/public/
+/examples/**/public/
+www/public
+
+/packages/**/lib/
+
+node_modules

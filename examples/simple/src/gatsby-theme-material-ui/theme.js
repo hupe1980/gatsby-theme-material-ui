@@ -1,22 +1,21 @@
-import red from '@material-ui/core/colors/red';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme, colors } from "@material-ui/core";
 
 // A custom theme for this app
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#556cd6'
+      main: `#556cd6`,
     },
     secondary: {
-      main: '#19857b'
+      main: `#19857b`,
     },
     error: {
-      main: red.A400
+      main: colors.red.A400,
     },
     background: {
-      default: '#fff'
-    }
-  }
+      default: `#fff`,
+    },
+  },
 });
 
 export default theme;

@@ -1,8 +1,8 @@
 module.exports = themeOptions => {
   return {
     siteMetadata: {
-      title: 'gatsby-theme-material-ui-layout'
+      title: `gatsby-theme-material-ui-layout`,
     },
-    plugins: []
+    plugins: [],
   };
 };

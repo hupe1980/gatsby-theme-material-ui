@@ -1,20 +1,18 @@
-import React from 'react';
-import { Link } from 'gatsby-theme-material-ui/components';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import React from "react";
+import { Link } from "gatsby-theme-material-ui";
+import { Box, Container, Typography } from "@material-ui/core";
 
-import ProTip from '../components/pro-tip';
-import Counter from '../components/counter';
+import ProTip from "../components/pro-tip";
+import Counter from "../components/counter";
 
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
+      {`Built with love by the `}
       <Link color="inherit" href="https://material-ui.com/">
         Material-UI
       </Link>
-      {' team.'}
+      {` team.`}
     </Typography>
   );
 }
@@ -24,7 +22,7 @@ export default function App() {
     <Container maxWidth="sm">
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Gatsby v4-alpha example
+          gatsby-theme-material-ui example
         </Typography>
         <Link to="/about" color="secondary">
           Go to the about page

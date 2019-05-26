@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link as GatsbyLink } from 'gatsby';
+import React from "react";
+import { Link as GatsbyLink } from "gatsby";
 
 function ALink({ to, children, innerRef, ...other }) {
   return (
@@ -11,7 +11,7 @@ function ALink({ to, children, innerRef, ...other }) {
 
 const Link = React.forwardRef(function Link(
   { to, activeClassName, partiallyActive, ...other },
-  ref
+  ref,
 ) {
   const internal = /^\/(?!\/)/.test(to);
 
@@ -35,6 +35,6 @@ const Link = React.forwardRef(function Link(
   return <ALink href={to} innerRef={ref} {...other} />;
 });
 
-Link.displayName = 'Link';
+Link.displayName = `Link`;
 
 export default Link;

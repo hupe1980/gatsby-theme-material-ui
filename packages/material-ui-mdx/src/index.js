@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { MDXProvider } from '@mdx-js/react';
-import { ThemeProvider } from '@material-ui/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import React, { useContext } from "react";
+import { MDXProvider } from "@mdx-js/react";
+import { ThemeProvider } from "@material-ui/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 
-import CodeBlock from './CodeBlock';
+import CodeBlock from "./CodeBlock";
 
 const components = {
   p: props => <Typography paragraph {...props} />,
@@ -17,12 +17,12 @@ const components = {
   h6: props => <Typography variant="h6" {...props} />,
   a: Link,
   pre: props => <div {...props} />,
-  code: CodeBlock
+  code: CodeBlock,
 };
 
 const rootContext = {
   theme: createMuiTheme(),
-  components
+  components,
 };
 
 export const Context = React.createContext(rootContext);
@@ -32,12 +32,12 @@ export function ComponentProvider({ theme, components, children }) {
   const context = {
     theme: {
       ...outer.theme,
-      ...theme
+      ...theme,
     },
     components: {
       ...outer.components,
-      ...components
-    }
+      ...components,
+    },
   };
 
   return (

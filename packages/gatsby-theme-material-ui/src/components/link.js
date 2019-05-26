@@ -1,7 +1,7 @@
-import React from 'react';
-import MuiLink from '@material-ui/core/Link';
+import React from "react";
+import MuiLink from "@material-ui/core/Link";
 
-import GastsbyLink from './gatsby-link';
+import GastsbyLink from "./gatsby-link";
 
 function Link(props) {
   return <MuiLink component={GastsbyLink} {...props} />;
