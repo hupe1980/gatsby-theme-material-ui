@@ -20,7 +20,7 @@
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-material-ui": "^2.0.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-webfonts": "^1.0.8"
+    "gatsby-plugin-webfonts": "^1.0.10"
   },
   "peerDependencies": {
     "@material-ui/core": ">=4.0.0",
