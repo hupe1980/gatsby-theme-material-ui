@@ -4,13 +4,9 @@
   "author": "hello@webappsolutions.de",
   "license": "MIT",
   "scripts": {
-    "start:blog": "yarn workspace example-blog start",
-    "start:composition": "yarn workspace example-composition start",
     "start:simple": "yarn workspace example-simple start",
     "start:using-redux": "yarn workspace example-using-redux start",
     "start:www": "yarn workspace www start",
-    "build:blog": "yarn workspace example-blog build",
-    "build:composition": "yarn workspace example-composition build",
     "build:simple": "yarn workspace example-simple build",
     "build:using-redux": "yarn workspace example-using-redux build",
     "build:www": "yarn workspace www build",
@@ -29,12 +25,12 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^5.0.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "lerna": "^3.14.1",
-    "prettier": "^1.17.1"
+    "lerna": "^3.15.0",
+    "prettier": "^1.18.2"
   }
 }
