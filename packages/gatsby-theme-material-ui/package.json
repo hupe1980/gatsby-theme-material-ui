@@ -11,6 +11,7 @@
   "keywords": [
     "react",
     "gatsby",
+    "gatsby-plugin",
     "gatsby-theme",
     "material-ui"
   ],
@@ -18,7 +19,7 @@
   "scripts": {},
   "dependencies": {
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
-    "gatsby-plugin-material-ui": "^2.1.1",
+    "gatsby-plugin-material-ui": "^2.1.4",
     "gatsby-plugin-react-helmet": "^3.1.0",
     "gatsby-plugin-webfonts": "^1.0.12"
   },
