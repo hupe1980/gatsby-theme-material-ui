@@ -10,7 +10,7 @@ module.exports = {
       instagram: ``,
     },
   },
-  __experimentalThemes: [
+  plugins: [
     {
       resolve: `gatsby-theme-material-ui`,
       options: {
@@ -22,12 +22,6 @@ module.exports = {
       resolve: `gatsby-theme-material-ui-layout`,
       options: {},
     },
-    // {
-    //   resolve: `gatsby-theme-netlify-cms`,
-    //   options: {}
-    // }
-  ],
-  plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

@@ -3,8 +3,6 @@
 > A [Gatsby](https://github.com/gatsbyjs/gatsby) theme for
 > [Material-UI](https://github.com/mui-org/material-ui): The fastest way to build server-side rendered Material-UI websites
 
-:warning: This is experimental and subject to breaking changes.
-
 ## Install
 
 ```sh
@@ -21,7 +19,7 @@ Edit `gatsby-config.js`
 
 ```javascript
 module.exports = {
-  __experimentalThemes: [`gatsby-theme-material-ui`],
+  plugins: [`gatsby-theme-material-ui`],
 };
 ```
 
@@ -40,7 +38,7 @@ By default, the plugin adds vendor-specific prefixes and minimizes the server-si
 
 ```javascript
 module.exports = {
-  __experimentalThemes: [
+  plugins: [
     {
       resolve: `gatsby-theme-material-ui`,
       options: {
@@ -85,7 +83,7 @@ Edit `gatsby-config.js`
 // gatsby-config.js
 
 module.exports = {
-  __experimentalThemes: [
+  plugins: [
     {
       resolve: `gatsby-theme-material-ui`,
       options: {

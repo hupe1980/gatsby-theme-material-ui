@@ -3,8 +3,6 @@
 > [Gatsby](https://github.com/gatsbyjs/gatsby) themes for
 > [Material-UI](https://github.com/mui-org/material-ui): The fastest way to build server-side rendered Material-UI websites
 
-:warning: This is experimental and subject to breaking changes.
-
 ## Gatsby Themes
 
 This repository is a monorepo managed with [Lerna](https://github.com/lerna/lerna). [Several themes](/packages) are published to npm from the same codebase.
