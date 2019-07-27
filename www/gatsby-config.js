@@ -23,6 +23,14 @@ module.exports = {
       options: {},
     },
     {
+      resolve: `gatsby-theme-material-ui-layout`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-theme-netlify-cms`,
+      options: {},
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-139603907-1`,
