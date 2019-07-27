@@ -23,10 +23,6 @@ module.exports = {
       options: {},
     },
     {
-      resolve: `gatsby-theme-material-ui-layout`,
-      options: {},
-    },
-    {
       resolve: `gatsby-theme-netlify-cms`,
       options: {},
     },
