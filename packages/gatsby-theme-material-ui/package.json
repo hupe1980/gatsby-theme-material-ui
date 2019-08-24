@@ -6,7 +6,8 @@
   "author": "hello@webappsolutions.de",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hupe1980/gatsby-theme-material-ui"
+    "url": "https://github.com/hupe1980/gatsby-theme-material-ui",
+    "directory": "packages/gatsby-theme-material-ui"
   },
   "keywords": [
     "react",
