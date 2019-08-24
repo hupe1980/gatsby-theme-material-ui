@@ -25,6 +25,7 @@ module.exports = themeOptions => {
 
   return {
     plugins: [
+      `gatsby-theme-material-ui-top-layout`,
       {
         resolve: `gatsby-plugin-material-ui`,
         options: {
