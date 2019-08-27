@@ -107,7 +107,7 @@ For more options, have a look at the plugin [readme](https://github.com/hupe1980
 
 ## Theming
 
-Create & Edit src/gatsby-theme-material-ui/theme.js
+Create & Edit src/gatsby-theme-material-ui-top-layout/theme.js
 
 ```javascript
 import { createMuiTheme } from "@material-ui/core";
@@ -154,12 +154,12 @@ import {
 
 ## Customizing
 
-Create & Edit src/gatsby-theme-material-ui/components/top-layout.js
+Create & Edit src/gatsby-theme-material-ui-top-layout/components/top-layout.js
 
 ```javascript
 import React from "react";
 import { Provider } from "react-redux";
-import ThemeTopLayout from "gatsby-theme-material-ui/src/components/top-layout";
+import ThemeTopLayout from "gatsby-theme-material-ui-top-layout/src/components/top-layout";
 
 import createStore from "../../state/createStore";
 

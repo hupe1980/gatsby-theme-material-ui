@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-theme-material-ui-top-layout",
+  "version": "1.0.0",
+  "description": "Gatsby theme for Material-UI",
+  "license": "MIT",
+  "author": "hello@webappsolutions.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hupe1980/gatsby-theme-material-ui",
+    "directory": "packages/gatsby-theme-material-ui-top-layout"
+  },
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "gatsby-plugin-react-helmet": "^3.1.2"
+  },
+  "peerDependencies": {
+    "@material-ui/core": ">=4.0.0",
+    "gatsby": ">=2.0.75",
+    "react-helmet": ">=5.2.0"
+  }
+}
