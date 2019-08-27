@@ -9,13 +9,6 @@
     "url": "https://github.com/hupe1980/gatsby-theme-material-ui",
     "directory": "packages/gatsby-theme-material-ui-top-layout"
   },
-  "keywords": [
-    "react",
-    "gatsby",
-    "gatsby-plugin",
-    "gatsby-theme",
-    "material-ui"
-  ],
   "main": "index.js",
   "scripts": {},
   "dependencies": {
