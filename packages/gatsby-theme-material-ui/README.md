@@ -59,7 +59,7 @@ Material-UI was designed with the [Roboto](https://fonts.google.com/specimen/Rob
 Edit `theme.js`
 
 ```javascript
-// src/gatsby-theme-material-ui/theme.js
+// src/gatsby-theme-material-ui-top-layout/theme.js
 
 import { createMuiTheme } from "@material-ui/core";
 
