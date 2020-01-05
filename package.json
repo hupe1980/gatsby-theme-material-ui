@@ -11,8 +11,8 @@
     "build:using-redux": "yarn workspace example-using-redux build",
     "build:www": "yarn workspace www build",
     "prepare": "lerna run prepare",
-    "grooming:outdated": "yarn outdated",
-    "grooming:upgrade": "yarn upgrade-interactive --latest",
+    "all:outdated": "yarn outdated",
+    "all:upgrade": "yarn upgrade-interactive --latest",
     "lint": "eslint . --cache  --report-unused-disable-directives",
     "lint:ci": "eslint . --report-unused-disable-directives",
     "lint:fix": "eslint . --cache --fix"
