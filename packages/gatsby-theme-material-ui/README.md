@@ -7,10 +7,10 @@
 
 ```sh
 // with npm
-npm install gatsby-theme-material-ui
+npm install gatsby-theme-material-ui @material-ui/core
 
 // with yarn
-yarn add gatsby-theme-material-ui
+yarn add gatsby-theme-material-ui @material-ui/core
 ```
 
 ## How to use
