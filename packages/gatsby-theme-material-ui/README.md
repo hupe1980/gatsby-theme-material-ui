@@ -144,7 +144,7 @@ The following components have also been adapted for use with Gatsby:
 
 ```javascript
 import {
-  BottomNavigationArea,
+  BottomNavigationAction,
   Button,
   CardActionArea,
   Fab,
