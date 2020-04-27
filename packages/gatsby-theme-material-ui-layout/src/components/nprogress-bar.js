@@ -12,7 +12,7 @@ NProgress.configure({
   `,
 });
 
-const styles = theme => {
+const styles = (theme) => {
   const color = `green`;
 
   return {

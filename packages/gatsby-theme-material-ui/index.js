@@ -1,1 +1,1 @@
-export * from "./src/components";
+export * from "gatsby-material-ui-components";

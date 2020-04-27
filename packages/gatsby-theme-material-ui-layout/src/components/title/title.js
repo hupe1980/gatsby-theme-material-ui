@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import useSiteMetadata from "../../hooks/use-site-metadata";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   title: {
     lineHeight: `30px`,
     fontSize: `18px`,

@@ -5,7 +5,7 @@ import { IconButton } from "gatsby-theme-material-ui";
 import GitHubIcon from "../../svg-icons/github-icon";
 import TwitterIcon from "../../svg-icons/twitter-icon";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.common.white,
   },

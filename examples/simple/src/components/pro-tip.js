@@ -10,7 +10,7 @@ function LightBulbIcon(props) {
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     margin: theme.spacing(6, 0, 3),
   },
