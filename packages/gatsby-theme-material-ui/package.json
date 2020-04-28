@@ -17,6 +17,7 @@
     "material-ui"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {},
   "dependencies": {
     "gatsby-material-ui-components": "^0.0.1",
