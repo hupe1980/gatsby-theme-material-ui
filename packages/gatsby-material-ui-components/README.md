@@ -2,7 +2,7 @@
 
 > [Material-UI](https://github.com/mui-org/material-ui) components for [Gatsby](https://github.com/gatsbyjs/gatsby)
 
-The components are part of the [gatsby-theme-material-ui](https://github.com/hupe1980/gatsby-theme-material-ui/packages/gatsby-theme-material-ui)
+The components are part of the [gatsby-theme-material-ui](https://github.com/hupe1980/gatsby-theme-material-ui)
 
 ## Install
 
