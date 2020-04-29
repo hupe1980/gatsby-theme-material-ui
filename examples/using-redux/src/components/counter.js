@@ -24,11 +24,8 @@ const mapStateToProps = ({ count }) => {
   return { count };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return { increment: () => dispatch({ type: `INCREMENT` }) };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);

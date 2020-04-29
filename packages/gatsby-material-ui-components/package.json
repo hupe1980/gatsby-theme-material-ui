@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-material-ui-components",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "build:watch": "rimraf lib && tsc -w",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@material-ui/core": ">=4.0.0",
+    "gatsby": ">=2.0.75",
+    "react": ">=16.8.6"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.9.12",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "gatsby": "^2.21.0",
+    "react": "^16.8.6",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  }
+}

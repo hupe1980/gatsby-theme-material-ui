@@ -17,7 +17,7 @@ const defaultStylesConfig = {
   },
 };
 
-module.exports = themeOptions => {
+module.exports = (themeOptions) => {
   const {
     stylesConfig = defaultStylesConfig,
     webFontsConfig = defaultWebFontsConfig,

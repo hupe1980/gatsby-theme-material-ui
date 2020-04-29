@@ -17,8 +17,10 @@
     "material-ui"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {},
   "dependencies": {
+    "gatsby-material-ui-components": "^0.0.1",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-material-ui": "^2.1.4",
     "gatsby-plugin-webfonts": "^1.1.2",

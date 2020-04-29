@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Link } from "gatsby-theme-material-ui";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   skipLink: {
     border: 0,
     color: theme.palette.text.primary,

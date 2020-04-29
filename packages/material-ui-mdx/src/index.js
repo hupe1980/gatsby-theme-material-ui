@@ -8,15 +8,15 @@ import Link from "@material-ui/core/Link";
 import CodeBlock from "./CodeBlock";
 
 const components = {
-  p: props => <Typography paragraph {...props} />,
-  h1: props => <Typography variant="h1" {...props} />,
-  h2: props => <Typography variant="h2" {...props} />,
-  h3: props => <Typography variant="h3" {...props} />,
-  h4: props => <Typography variant="h4" {...props} />,
-  h5: props => <Typography variant="h5" {...props} />,
-  h6: props => <Typography variant="h6" {...props} />,
+  p: (props) => <Typography paragraph {...props} />,
+  h1: (props) => <Typography variant="h1" {...props} />,
+  h2: (props) => <Typography variant="h2" {...props} />,
+  h3: (props) => <Typography variant="h3" {...props} />,
+  h4: (props) => <Typography variant="h4" {...props} />,
+  h5: (props) => <Typography variant="h5" {...props} />,
+  h6: (props) => <Typography variant="h6" {...props} />,
   a: Link,
-  pre: props => <div {...props} />,
+  pre: (props) => <div {...props} />,
   code: CodeBlock,
 };
 
