@@ -24,7 +24,8 @@
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-material-ui": "^2.1.4",
     "gatsby-plugin-webfonts": "^1.1.2",
-    "gatsby-theme-material-ui-top-layout": "^1.0.2"
+    "gatsby-theme-material-ui-top-layout": "^1.0.2",
+    "react-helmet": "^6.0.0",
   },
   "peerDependencies": {
     "@material-ui/core": ">=4.0.0",
