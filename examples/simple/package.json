@@ -1,11 +1,11 @@
 {
   "name": "example-simple",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.3.1",
     "gatsby": "2.13.50",
-    "gatsby-theme-material-ui": "^1.0.9",
+    "gatsby-theme-material-ui": "^1.0.10",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "5.2.1"
