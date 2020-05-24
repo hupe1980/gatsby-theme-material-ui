@@ -153,6 +153,8 @@ import {
 } from "gatsby-theme-material-ui";
 ```
 
+For `<Button>`s with [`href` URLs](https://material-ui.com/api/button/#props), use the `to` attribute instead of `href`, to enable [Gatsby link features](https://www.gatsbyjs.org/docs/gatsby-link/).
+
 ## Customizing
 
 Create & Edit src/gatsby-theme-material-ui-top-layout/components/top-layout.js
