@@ -1,8 +1,8 @@
-import React from "react";
-import { Button } from "gatsby-theme-material-ui";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { Button } from 'gatsby-theme-material-ui';
+import { makeStyles } from '@material-ui/core/styles';
 
-import useSiteMetadata from "../../hooks/use-site-metadata";
+import useSiteMetadata from '../../hooks/use-site-metadata';
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: `none`,
     color: `inherit`,
     padding: `8px 16px`,
-    "&:hover,&:focus": {
+    '&:hover,&:focus': {
       color: `inherit`,
       background: `transparent`,
     },

@@ -1,7 +1,7 @@
-import React from "react";
-import NProgress from "nprogress";
-import { withStyles } from "@material-ui/core/styles";
-import NoSsr from "@material-ui/core/NoSsr";
+import React from 'react';
+import NProgress from 'nprogress';
+import { withStyles } from '@material-ui/core/styles';
+import NoSsr from '@material-ui/core/NoSsr';
 
 NProgress.configure({
   template: `
@@ -16,8 +16,8 @@ const styles = (theme) => {
   const color = `green`;
 
   return {
-    "@global": {
-      "#nprogress": {
+    '@global': {
+      '#nprogress': {
         direction: `ltr`,
         pointerEvents: `none`,
         position: `fixed`,
@@ -27,7 +27,7 @@ const styles = (theme) => {
         height: 2,
         zIndex: theme.zIndex.tooltip,
         backgroundColor: `#e0e0e0`,
-        "& .nprogress-bar": {
+        '& .nprogress-bar': {
           position: `fixed`,
           backgroundColor: color,
           top: 0,
@@ -35,7 +35,7 @@ const styles = (theme) => {
           right: 0,
           height: 2,
         },
-        "& dd, & dt": {
+        '& dd, & dt': {
           position: `absolute`,
           top: 0,
           height: 2,
@@ -43,24 +43,24 @@ const styles = (theme) => {
           borderRadius: `100%`,
           animation: `nprogress-pulse 2s ease-out 0s infinite`,
         },
-        "& dd": {
+        '& dd': {
           opacity: 0.6,
           width: 20,
           right: 0,
           clip: `rect(-6px,22px,14px,10px)`,
         },
-        "& dt": {
+        '& dt': {
           opacity: 0.6,
           width: 180,
           right: -80,
           clip: `rect(-6px,90px,14px,-6px)`,
         },
       },
-      "@keyframes nprogress-pulse": {
-        "30%": {
+      '@keyframes nprogress-pulse': {
+        '30%': {
           opacity: 0.6,
         },
-        "60%": {
+        '60%': {
           opacity: 0,
         },
         to: {

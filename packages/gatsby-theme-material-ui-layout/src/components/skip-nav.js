@@ -1,6 +1,6 @@
-import React from "react";
-import { makeStyles } from "@material-ui/styles";
-import { Link } from "gatsby-theme-material-ui";
+import React from 'react';
+import { makeStyles } from '@material-ui/styles';
+import { Link } from 'gatsby-theme-material-ui';
 
 const useStyles = makeStyles((theme) => ({
   skipLink: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: `hidden`,
     position: `absolute`,
     zIndex: 100,
-    "&:focus": {
+    '&:focus': {
       padding: theme.spacing(2),
       position: `fixed`,
       top: theme.spacing(4),

@@ -1,4 +1,4 @@
-import { createConfig } from "gatsby-theme-netlify-cms";
+import { createConfig } from 'gatsby-theme-netlify-cms';
 
 const config = createConfig({
   backend: {

@@ -8,12 +8,19 @@ export interface GatsbyProps {
 }
 
 export default function patchButtonBaseComponent<P extends ButtonBaseProps>(
-  BaseButtonComponent: React.ComponentType<P>
+  BaseButtonComponent: React.ComponentType<P>,
 ) {
   return React.forwardRef<React.Ref<unknown>, P & GatsbyProps>((props, ref) => {
     const { to, ...buttonProps } = props;
     const component = to ? GatsbyLink : `button`;
 
-    return <BaseButtonComponent component={component} ref={ref} to={to} {...(buttonProps as P)} />;
+    return (
+      <BaseButtonComponent
+        component={component}
+        ref={ref}
+        to={to}
+        {...(buttonProps as P)}
+      />
+    );
   });
 }

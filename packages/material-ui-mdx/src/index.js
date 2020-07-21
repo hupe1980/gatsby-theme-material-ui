@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { MDXProvider } from "@mdx-js/react";
-import { ThemeProvider } from "@material-ui/styles";
-import { createMuiTheme } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
+import React, { useContext } from 'react';
+import { MDXProvider } from '@mdx-js/react';
+import { ThemeProvider } from '@material-ui/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 
-import CodeBlock from "./CodeBlock";
+import CodeBlock from './CodeBlock';
 
 const components = {
   p: (props) => <Typography paragraph {...props} />,

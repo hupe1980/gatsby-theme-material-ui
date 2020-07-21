@@ -10,6 +10,7 @@ This repository is a monorepo managed with [Lerna](https://github.com/lerna/lern
 | Theme                                                          | Description                                  |
 | -------------------------------------------------------------- | -------------------------------------------- |
 | [gatsby-theme-material-ui](/packages/gatsby-theme-material-ui) | Core Theme to support the use of Material-UI |
+| [gatsby-material-ui-components](/packages/gatsby-material-ui-components) | Material-UI components for Gatsby |
 
 ## Running the examples locally
 

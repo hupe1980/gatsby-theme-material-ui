@@ -1,6 +1,6 @@
-import React from "react";
-import Highlight, { defaultProps } from "prism-react-renderer";
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import React from 'react';
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 
 export default function CodeBlock({
   children,

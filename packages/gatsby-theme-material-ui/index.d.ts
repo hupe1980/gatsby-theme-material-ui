@@ -1,1 +1,1 @@
-export * from "gatsby-material-ui-components";
+export * from 'gatsby-material-ui-components';

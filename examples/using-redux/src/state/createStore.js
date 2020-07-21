@@ -1,4 +1,4 @@
-import { createStore as reduxCreateStore } from "redux";
+import { createStore as reduxCreateStore } from 'redux';
 
 const reducer = (state, action) => {
   if (action.type === `INCREMENT`) {

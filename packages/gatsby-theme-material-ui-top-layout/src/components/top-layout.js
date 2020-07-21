@@ -1,8 +1,8 @@
-import React from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { ThemeProvider } from "@material-ui/styles";
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/styles';
 
-import Viewport from "./viewport";
+import Viewport from './viewport';
 
 export default function TopLayout({ children, theme }) {
   return (

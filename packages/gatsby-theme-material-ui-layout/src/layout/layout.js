@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import NProgressBar from "../components/nprogress-bar";
-import SkipNav from "../components/skip-nav";
-import Header from "./header";
-import Content from "./content";
-import Footer from "./footer";
+import NProgressBar from '../components/nprogress-bar';
+import SkipNav from '../components/skip-nav';
+import Header from './header';
+import Content from './content';
+import Footer from './footer';
 
 export default function Layout({ children }) {
   return (

@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link, GatsbyLinkProps } from 'gatsby';
 
-interface ALinkProps extends Omit<GatsbyLinkProps<any> , 'to'> {
+interface ALinkProps extends Omit<GatsbyLinkProps<any>, 'to'> {
   href: string;
 }
 
-const ALink: React.FC<ALinkProps> = ({ href, children, innerRef, ...other }) => (
+const ALink: React.FC<ALinkProps> = ({
+  href,
+  children,
+  innerRef,
+  ...other
+}) => (
   <a href={href} ref={innerRef} {...other}>
     {children}
   </a>
@@ -13,8 +18,8 @@ const ALink: React.FC<ALinkProps> = ({ href, children, innerRef, ...other }) => 
 
 export const GatsbyLink = React.forwardRef(
   (
-    props: Omit<GatsbyLinkProps<any>, 'ref'>,
-    ref: React.Ref<HTMLAnchorElement>
+    props: Omit<GatsbyLinkProps<unknown>, 'ref'>,
+    ref: React.Ref<HTMLAnchorElement>,
   ) => {
     const { to, activeClassName, partiallyActive, ...other } = props;
     const internal = /^\/(?!\/)/.test(to);
@@ -37,7 +42,7 @@ export const GatsbyLink = React.forwardRef(
       );
     }
     return <ALink href={to} innerRef={ref} {...other} />;
-  }
+  },
 );
 
-GatsbyLink.displayName = `Link`;
+GatsbyLink.displayName = 'Link';

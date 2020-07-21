@@ -14,9 +14,8 @@
     "prepare": "lerna run prepare",
     "all:outdated": "yarn outdated",
     "all:upgrade": "yarn upgrade-interactive --latest",
-    "lint": "eslint . --cache  --report-unused-disable-directives",
-    "lint:ci": "eslint . --report-unused-disable-directives",
-    "lint:fix": "eslint . --cache --fix"
+    "lint": "eslint . --report-unused-disable-directives",
+    "lint:fix": "eslint . --fix"
   },
   "workspaces": [
     "packages/*",
@@ -24,10 +23,15 @@
     "www"
   ],
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",

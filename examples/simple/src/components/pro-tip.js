@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "gatsby-theme-material-ui";
-import { makeStyles, SvgIcon, Typography } from "@material-ui/core";
+import React from 'react';
+import { Link } from 'gatsby-theme-material-ui';
+import { makeStyles, SvgIcon, Typography } from '@material-ui/core';
 
 function LightBulbIcon(props) {
   return (

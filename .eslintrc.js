@@ -1,18 +1,17 @@
 module.exports = {
-  parser: 'babel-eslint',
-  extends: ['react-app', 'prettier'],
-  plugins: ['prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-    quotes: ['error', 'backtick']
-  },
+  extends: [
+    `react-app`,
+    `prettier/@typescript-eslint`,
+    `plugin:prettier/recommended`,
+  ],
+  plugins: [`prettier`],
   overrides: [
     {
-      files: ['**/cypress/integration/**/*', '**/cypress/support/**/*'],
+      files: [`**/cypress/integration/**/*`, `**/cypress/support/**/*`],
       globals: {
         cy: false,
-        Cypress: false
-      }
-    }
-  ]
+        Cypress: false,
+      },
+    },
+  ],
 };

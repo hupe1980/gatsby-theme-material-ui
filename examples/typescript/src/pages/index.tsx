@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby-theme-material-ui";
-import { Container, Box, Typography } from "@material-ui/core";
+import React from 'react';
+import { Link } from 'gatsby-theme-material-ui';
+import { Container, Box, Typography } from '@material-ui/core';
 
-import ProTip from "../components/pro-tip";
+import ProTip from '../components/pro-tip';
 
 function MadeWithLove() {
   return (
