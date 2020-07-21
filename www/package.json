@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.11.0",
@@ -12,8 +12,8 @@
     "gatsby-plugin-netlify": "^2.3.11",
     "gatsby-plugin-offline": "^3.2.19",
     "gatsby-plugin-performance-metrics": "^1.0.1",
-    "gatsby-theme-material-ui": "^1.0.11",
-    "gatsby-theme-material-ui-layout": "^0.0.21",
+    "gatsby-theme-material-ui": "^1.0.12",
+    "gatsby-theme-material-ui-layout": "^0.0.22",
     "gatsby-theme-netlify-cms": "^1.0.0",
     "react": "latest",
     "react-dom": "latest"
