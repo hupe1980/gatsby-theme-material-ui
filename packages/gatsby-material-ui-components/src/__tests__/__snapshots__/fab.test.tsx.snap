@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fab button with ref 1`] = `
+<DocumentFragment>
+  <button
+    class="MuiButtonBase-root MuiFab-root"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiFab-label"
+    >
+      text
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`fab lbutton with to 1`] = `
+<DocumentFragment>
+  <a
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiFab-root"
+    href="/page2"
+    role="button"
+    tabindex="0"
+  >
+    <span
+      class="MuiFab-label"
+    >
+      text
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </a>
+</DocumentFragment>
+`;
+
+exports[`fab should be rendered correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="MuiButtonBase-root MuiFab-root"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiFab-label"
+    >
+      text
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</DocumentFragment>
+`;
