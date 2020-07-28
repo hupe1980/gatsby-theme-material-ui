@@ -13,6 +13,9 @@ npm install gatsby-theme-material-ui @material-ui/core
 yarn add gatsby-theme-material-ui @material-ui/core
 ```
 
+## Theme vs. Plugin
+- `gatsby-plugin-material-ui` solves FOUC, auto prefixing and minification.
+- `gatsby-theme-material-ui` uses the plugin under the hood, adds web fonts, meta-viewport, CSS baseline and mui theme support and has material ui styled gatsby link components
 ## How to use
 
 Edit `gatsby-config.js`
