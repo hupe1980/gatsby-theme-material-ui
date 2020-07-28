@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`link inside list 1`] = `
+<DocumentFragment>
+  <ul
+    class="MuiList-root MuiList-padding"
+  >
+    <a
+      aria-disabled="false"
+      class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary"
+      href="/page2"
+      role="button"
+      tabindex="0"
+    >
+      Item
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`link link with href 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    href="http://example.org"
+  >
+    Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`link link with ref 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+  >
+    Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`link link with to 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    href="/page2"
+  >
+    Link
+  </a>
+</DocumentFragment>
+`;
+
+exports[`link should be rendered correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+  >
+    Link
+  </a>
+</DocumentFragment>
+`;

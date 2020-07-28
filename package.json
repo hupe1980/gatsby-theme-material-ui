@@ -15,7 +15,8 @@
     "all:outdated": "yarn outdated",
     "all:upgrade": "yarn upgrade-interactive --latest",
     "lint": "eslint . --report-unused-disable-directives",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "yarn workspace gatsby-material-ui-components test"
   },
   "workspaces": [
     "packages/*",
