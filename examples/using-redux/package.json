@@ -3,12 +3,12 @@
   "version": "1.0.30",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "4.11.0",
-    "gatsby": "2.24.7",
-    "gatsby-theme-material-ui": "^1.0.13",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-redux": "^7.1.0",
+    "@material-ui/core": "^4.11.3",
+    "gatsby": "^3.2.1",
+    "gatsby-theme-material-ui": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
     "redux": "^4.0.4"
   },
   "scripts": {
