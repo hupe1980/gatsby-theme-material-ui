@@ -10,4 +10,5 @@ module.exports = {
       },
     },
   ],
+  rules: { 'prettier/prettier': ['error', { endOfLine: 'auto' }] }, // fix linting on windows
 };

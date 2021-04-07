@@ -38,5 +38,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "lerna": "^4.0.0",
     "prettier": "^2.2.1"
-  }
+  },
+  "dependencies": {}
 }
