@@ -22,10 +22,10 @@ module.exports = {
       resolve: `gatsby-theme-material-ui-layout`,
       options: {},
     },
-    {
+    /* {
       resolve: `gatsby-theme-netlify-cms`,
       options: {},
-    },
+    },*/
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

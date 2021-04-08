@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    `react-app`,
-    `prettier/@typescript-eslint`,
-    `plugin:prettier/recommended`,
-  ],
+  extends: [`react-app`, `plugin:prettier/recommended`],
   plugins: [`prettier`],
   overrides: [
     {
@@ -14,4 +10,5 @@ module.exports = {
       },
     },
   ],
+  rules: { 'prettier/prettier': ['error', { endOfLine: 'auto' }] }, // fix linting on windows
 };

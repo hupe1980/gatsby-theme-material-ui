@@ -3,24 +3,24 @@
   "version": "1.0.26",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "4.11.0",
-    "@material-ui/icons": "4.9.1",
-    "classnames": "^2.2.6",
-    "gatsby": "2.24.7",
-    "gatsby-plugin-google-analytics": "^2.3.12",
-    "gatsby-plugin-manifest": "^2.4.19",
-    "gatsby-plugin-netlify": "^2.3.11",
-    "gatsby-plugin-offline": "^3.2.19",
+    "@material-ui/core": "4.11.3",
+    "@material-ui/icons": "4.11.2",
+    "classnames": "^2.3.1",
+    "gatsby": "3.2.1",
+    "gatsby-plugin-google-analytics": "^3.2.0",
+    "gatsby-plugin-manifest": "^3.2.0",
+    "gatsby-plugin-netlify": "^3.2.0",
+    "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-performance-metrics": "^1.0.1",
-    "gatsby-theme-material-ui": "^1.0.13",
-    "gatsby-theme-material-ui-layout": "^0.0.23",
-    "gatsby-theme-netlify-cms": "^1.0.0",
-    "react": "latest",
-    "react-dom": "latest"
+    "gatsby-theme-material-ui": "^2.0.0",
+    "gatsby-theme-material-ui-layout": "^2.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   }
 }
