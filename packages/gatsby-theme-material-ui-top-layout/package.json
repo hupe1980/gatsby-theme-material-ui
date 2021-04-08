@@ -15,7 +15,7 @@
   },
   "peerDependencies": {
     "@material-ui/core": ">=4.0.0",
-    "gatsby": ">=3.0.0",
+    "gatsby": "^3.0.0",
     "react-helmet": ">=6.1.0"
   }
 }
