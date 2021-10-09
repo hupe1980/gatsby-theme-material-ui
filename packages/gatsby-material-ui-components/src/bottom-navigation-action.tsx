@@ -1,6 +1,6 @@
 import MuiBottomNavigationAction, {
   BottomNavigationActionProps,
-} from '@material-ui/core/BottomNavigationAction';
+} from '@mui/material/BottomNavigationAction';
 
 import patchButtonBaseComponent from './patch-base-button-components';
 

@@ -11,17 +11,9 @@ const defaultWebFontsConfig = {
   },
 };
 
-const defaultStylesConfig = {
-  stylesProvider: {
-    injectFirst: true,
-  },
-};
-
 module.exports = (themeOptions) => {
-  const {
-    stylesConfig = defaultStylesConfig,
-    webFontsConfig = defaultWebFontsConfig,
-  } = themeOptions;
+  const { muiPluginConfig = {}, webFontsConfig = defaultWebFontsConfig } =
+    themeOptions;
 
   return {
     plugins: [
@@ -29,7 +21,7 @@ module.exports = (themeOptions) => {
       {
         resolve: `gatsby-plugin-material-ui`,
         options: {
-          ...stylesConfig,
+          ...muiPluginConfig,
         },
       },
       `gatsby-plugin-react-helmet`,

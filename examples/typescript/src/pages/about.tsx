@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby-theme-material-ui';
-import { Container, Box, Typography } from '@material-ui/core';
+import { Container, Box, Typography } from '@mui/material';
 
 import ProTip from '../components/pro-tip';
 

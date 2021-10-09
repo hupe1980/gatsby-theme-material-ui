@@ -3,15 +3,12 @@
 exports[`button button with ref 1`] = `
 <DocumentFragment>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1e6y48t-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >
     <span
-      class="MuiButton-label"
-    />
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </DocumentFragment>
@@ -20,17 +17,12 @@ exports[`button button with ref 1`] = `
 exports[`button lbutton with to 1`] = `
 <DocumentFragment>
   <a
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1e6y48t-MuiButtonBase-root-MuiButton-root"
     href="/page2"
-    role="button"
     tabindex="0"
   >
     <span
-      class="MuiButton-label"
-    />
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </a>
 </DocumentFragment>
@@ -39,15 +31,12 @@ exports[`button lbutton with to 1`] = `
 exports[`button should be rendered correctly 1`] = `
 <DocumentFragment>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1e6y48t-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >
     <span
-      class="MuiButton-label"
-    />
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </DocumentFragment>

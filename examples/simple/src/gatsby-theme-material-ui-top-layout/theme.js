@@ -1,4 +1,4 @@
-import { createTheme, colors } from '@material-ui/core';
+import { createTheme, colors } from '@mui/material';
 
 // A custom theme for this app
 const theme = createTheme({

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonBaseProps } from '@material-ui/core/ButtonBase';
+import { ButtonBaseProps } from '@mui/material/ButtonBase';
 
 import { GatsbyLink } from './glink';
 

@@ -8,17 +8,17 @@ The components are part of the [gatsby-theme-material-ui](https://github.com/hup
 
 ```sh
 // with npm
-npm install gatsby-material-ui-components @material-ui/core
+npm install gatsby-material-ui-components @mui/material
 
 // with yarn
-yarn add gatsby-material-ui-components @material-ui/core
+yarn add gatsby-material-ui-components @mui/material
 ```
 
 ## How to use
 
 ```javascript
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 //import { Link } from "gatsby"
 import { Link } from "gatsby-material-ui-components";
 

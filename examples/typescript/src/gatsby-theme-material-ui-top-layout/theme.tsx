@@ -1,5 +1,5 @@
-import red from '@material-ui/core/colors/red';
-import { createTheme } from '@material-ui/core';
+import red from '@mui/material/colors/red';
+import { createTheme } from '@mui/material';
 
 // A custom theme for this app
 const theme = createTheme({
