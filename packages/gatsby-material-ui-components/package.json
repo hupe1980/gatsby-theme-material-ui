@@ -21,12 +21,16 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@material-ui/core": ">=4.0.0",
+    "@mui/material": ">5.0.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "gatsby": "^3.0.0",
     "react": ">=16.8.6 || >=17.0.0"
   },
   "devDependencies": {
-    "@material-ui/core": "4.12.3",
+    "@mui/material": "^5.0.3",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/react-hooks": "^5.1.1",
     "@types/jest": "^26.0.7",

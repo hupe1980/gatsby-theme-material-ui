@@ -1,5 +1,5 @@
 import React from 'react';
-import MuiLink, { LinkProps } from '@material-ui/core/Link';
+import MuiLink, { LinkProps } from '@mui/material/Link';
 
 import { GatsbyLink } from './glink';
 

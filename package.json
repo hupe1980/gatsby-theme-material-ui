@@ -6,11 +6,9 @@
     "start:simple": "yarn workspace example-simple start",
     "start:typescript": "yarn workspace example-typescript start",
     "start:using-redux": "yarn workspace example-using-redux start",
-    "start:www": "yarn workspace www start",
     "build:simple": "yarn workspace example-simple build",
     "build:typescript": "yarn workspace example-typescript build",
     "build:using-redux": "yarn workspace example-using-redux build",
-    "build:www": "yarn workspace www build",
     "prepare": "lerna run prepare",
     "outdated:all": "yarn outdated",
     "upgrade:all": "yarn upgrade-interactive --latest",
@@ -20,8 +18,7 @@
   },
   "workspaces": [
     "packages/*",
-    "examples/*",
-    "www"
+    "examples/*"
   ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.21.0",
@@ -38,6 +35,5 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "lerna": "^4.0.0",
     "prettier": "^2.2.1"
-  },
-  "dependencies": {}
+  }
 }

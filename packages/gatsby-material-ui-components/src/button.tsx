@@ -1,4 +1,4 @@
-import MuiButton, { ButtonProps } from '@material-ui/core/Button';
+import MuiButton, { ButtonProps } from '@mui/material/Button';
 
 import patchButtonBaseComponent from './patch-base-button-components';
 

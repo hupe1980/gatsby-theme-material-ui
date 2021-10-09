@@ -1,6 +1,6 @@
 import MuiCardActionArea, {
   CardActionAreaProps,
-} from '@material-ui/core/CardActionArea';
+} from '@mui/material/CardActionArea';
 
 import patchButtonBaseComponent from './patch-base-button-components';
 

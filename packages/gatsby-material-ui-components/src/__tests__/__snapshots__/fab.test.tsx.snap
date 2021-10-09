@@ -3,17 +3,13 @@
 exports[`fab button with ref 1`] = `
 <DocumentFragment>
   <button
-    class="MuiButtonBase-root MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge css-a8igs1-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
+    text
     <span
-      class="MuiFab-label"
-    >
-      text
-    </span>
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </DocumentFragment>
@@ -22,19 +18,13 @@ exports[`fab button with ref 1`] = `
 exports[`fab lbutton with to 1`] = `
 <DocumentFragment>
   <a
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge css-a8igs1-MuiButtonBase-root-MuiFab-root"
     href="/page2"
-    role="button"
     tabindex="0"
   >
+    text
     <span
-      class="MuiFab-label"
-    >
-      text
-    </span>
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </a>
 </DocumentFragment>
@@ -43,17 +33,13 @@ exports[`fab lbutton with to 1`] = `
 exports[`fab should be rendered correctly 1`] = `
 <DocumentFragment>
   <button
-    class="MuiButtonBase-root MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge css-a8igs1-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
+    text
     <span
-      class="MuiFab-label"
-    >
-      text
-    </span>
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </DocumentFragment>

@@ -3,18 +3,16 @@
 exports[`link inside list 1`] = `
 <DocumentFragment>
   <ul
-    class="MuiList-root MuiList-padding"
+    class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
   >
     <a
-      aria-disabled="false"
-      class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-1arpvku-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiListItem-root"
       href="/page2"
-      role="button"
       tabindex="0"
     >
       Item
       <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </a>
   </ul>
@@ -24,7 +22,7 @@ exports[`link inside list 1`] = `
 exports[`link link with href 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
     href="http://example.org"
   >
     Link
@@ -35,7 +33,7 @@ exports[`link link with href 1`] = `
 exports[`link link with ref 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
   >
     Link
   </a>
@@ -45,7 +43,7 @@ exports[`link link with ref 1`] = `
 exports[`link link with to 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
     href="/page2"
   >
     Link
@@ -56,7 +54,7 @@ exports[`link link with to 1`] = `
 exports[`link should be rendered correctly 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
   >
     Link
   </a>
