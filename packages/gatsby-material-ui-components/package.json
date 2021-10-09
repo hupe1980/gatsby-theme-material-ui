@@ -1,7 +1,7 @@
 {
   "name": "gatsby-material-ui-components",
   "description": "Material-UI componentes for Gatsby",
-  "version": "4.13.0",
+  "version": "5.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,16 +21,16 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@mui/material": ">5.0.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@mui/material": ">5.0.0",
     "gatsby": "^3.0.0",
     "react": ">=16.8.6 || >=17.0.0"
   },
   "devDependencies": {
-    "@mui/material": "^5.0.3",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.3",
     "@testing-library/react": "^11.2.6",
     "@testing-library/react-hooks": "^5.1.1",
     "@types/jest": "^26.0.7",
