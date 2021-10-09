@@ -4,6 +4,5 @@ import MuiCardActionArea, {
 
 import patchButtonBaseComponent from './patch-base-button-components';
 
-export const CardActionArea = patchButtonBaseComponent<CardActionAreaProps>(
-  MuiCardActionArea,
-);
+export const CardActionArea =
+  patchButtonBaseComponent<CardActionAreaProps>(MuiCardActionArea);

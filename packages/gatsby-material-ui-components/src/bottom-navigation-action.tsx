@@ -4,6 +4,7 @@ import MuiBottomNavigationAction, {
 
 import patchButtonBaseComponent from './patch-base-button-components';
 
-export const BottomNavigationAction = patchButtonBaseComponent<BottomNavigationActionProps>(
-  MuiBottomNavigationAction,
-);
+export const BottomNavigationAction =
+  patchButtonBaseComponent<BottomNavigationActionProps>(
+    MuiBottomNavigationAction,
+  );
