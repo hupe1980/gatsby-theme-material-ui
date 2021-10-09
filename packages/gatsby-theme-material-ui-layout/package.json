@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui-layout",
-  "version": "4.12.3",
+  "version": "4.13.0",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "repository": {
@@ -25,7 +25,7 @@
     "react-dom": ">=16.8.6 || >=17.0.0"
   },
   "devDependencies": {
-    "gatsby-theme-material-ui": "^4.12.3",
+    "gatsby-theme-material-ui": "^4.13.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
