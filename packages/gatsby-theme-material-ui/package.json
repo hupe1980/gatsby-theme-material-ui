@@ -21,13 +21,13 @@
   "dependencies": {
     "gatsby-material-ui-components": "^5.0.0",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
-    "gatsby-plugin-material-ui": "^4.0.3",
-    "gatsby-plugin-webfonts": "^2.1.0",
+    "gatsby-plugin-material-ui": "^4.1.0",
+    "gatsby-plugin-webfonts": "^2.2.1",
     "gatsby-theme-material-ui-top-layout": "^5.0.0",
     "react-helmet": "^6.1.0"
   },
   "peerDependencies": {
-    "@mui/material": ">=5.0.0",
-    "gatsby": "^3.0.0"
+    "@mui/material": "^5.0.0",
+    "gatsby": "^3.0.0 || ^4.0.0"
   }
 }

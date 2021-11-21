@@ -1,5 +1,4 @@
 import React from 'react';
-import { ButtonBaseProps } from '@mui/material/ButtonBase';
 
 import { GatsbyLink } from './glink';
 
@@ -7,12 +6,12 @@ export interface GatsbyProps {
   to?: string;
 }
 
-export default function patchButtonBaseComponent<P extends ButtonBaseProps>(
+export default function patchButtonBaseComponent<E, P>(
   BaseButtonComponent: React.ComponentType<P>,
 ) {
-  return React.forwardRef<HTMLButtonElement, P & GatsbyProps>((props, ref) => {
+  return React.forwardRef<E, P & GatsbyProps>((props, ref) => {
     const { to, ...buttonProps } = props;
-    const component = to ? GatsbyLink : `button`;
+    const component = to ? GatsbyLink : undefined;
 
     return (
       <BaseButtonComponent
