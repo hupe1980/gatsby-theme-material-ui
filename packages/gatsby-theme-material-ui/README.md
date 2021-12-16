@@ -139,19 +139,22 @@ For `<Button>`s with [`href` URLs](https://material-ui.com/api/button/#props), u
 Create & Edit src/gatsby-theme-material-ui-top-layout/components/top-layout.js
 
 ```javascript
-import React from "react";
-import { Provider } from "react-redux";
-import ThemeTopLayout from "gatsby-theme-material-ui-top-layout/src/components/top-layout";
+import React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
 
-import createStore from "../../state/createStore";
+import Viewport from './viewport';
 
 export default function TopLayout({ children, theme }) {
-  const store = createStore();
-
   return (
-    <Provider store={store}>
-      <ThemeTopLayout theme={theme}>{children}</ThemeTopLayout>
-    </Provider>
+    <>
+      <Viewport />
+      <ThemeProvider theme={theme}>
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
+    </>
   );
 }
 ```
