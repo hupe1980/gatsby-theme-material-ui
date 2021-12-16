@@ -142,8 +142,7 @@ Create & Edit src/gatsby-theme-material-ui-top-layout/components/top-layout.js
 import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-
-import Viewport from './viewport';
+import Viewport from 'gatsby-theme-material-ui-top-layout/src/components/viewport.js'
 
 export default function TopLayout({ children, theme }) {
   return (
