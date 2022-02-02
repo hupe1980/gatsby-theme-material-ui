@@ -104,6 +104,8 @@ module.exports = {
 
 For more options, have a look at the plugin [readme](https://github.com/hupe1980/gatsby-plugin-webfonts/blob/master/gatsby-plugin-webfonts/README.md).
 
+> Note: If the changes you made in `src/gatsby-theme-material-ui-top-layout/theme.js` are not showing up, you might want to run `gatsby clean` to clean up the .cache folder and try again. This is required for newly shadowed files.
+
 ## Theming
 
 Create & Edit src/gatsby-theme-material-ui-top-layout/theme.js
