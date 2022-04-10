@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-ui",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "Gatsby theme for Material-UI",
   "license": "MIT",
   "repository": {
@@ -19,7 +19,7 @@
   "types": "index.d.ts",
   "scripts": {},
   "dependencies": {
-    "gatsby-material-ui-components": "^5.1.0",
+    "gatsby-material-ui-components": "^5.1.1",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-material-ui": "^4.1.0",
     "gatsby-plugin-webfonts": "^2.2.1",
