@@ -1,11 +1,11 @@
 {
   "name": "example-using-redux",
-  "version": "5.1.1",
+  "version": "5.2.0",
   "private": true,
   "dependencies": {
     "@mui/material": "latest",
     "gatsby": "latest",
-    "gatsby-theme-material-ui": "^5.1.1",
+    "gatsby-theme-material-ui": "^5.2.0",
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "latest",
