@@ -27,6 +27,26 @@ module.exports = {
 };
 ```
 
+## Testing your installation
+
+Replace the contents in your `pages/index.js` with the following
+```javascript
+import React from "react";
+import { Button, Box } from "@mui/material";
+
+const IndexPage = () => {
+  return (
+    <Box p={4}>
+      <Button variant="contained">Hello gatsby-theme-material-ui</Button>
+    </Box>
+  );
+};
+
+export default IndexPage;
+```
+
+You should be greeted with a MUI button when you navigate to the root of your site.
+
 ### top-layout
 
 You'll see several references below to the ["top-layout" theme](https://github.com/hupe1980/gatsby-theme-material-ui/tree/master/packages/gatsby-theme-material-ui-top-layout). Its role is to [prevent the Flash Of Unstyle Content](https://github.com/hupe1980/gatsby-theme-material-ui/pull/8).
@@ -83,6 +103,8 @@ module.exports = {
 ```
 
 For more options, have a look at the plugin [readme](https://github.com/hupe1980/gatsby-plugin-webfonts/blob/master/gatsby-plugin-webfonts/README.md).
+
+> Note: If the changes you made in `src/gatsby-theme-material-ui-top-layout/theme.js` are not showing up, you might want to run `gatsby clean` to clean up the .cache folder and try again. This is required for newly shadowed files.
 
 ## Theming
 
