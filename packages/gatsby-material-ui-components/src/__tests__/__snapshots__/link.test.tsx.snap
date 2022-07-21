@@ -6,7 +6,7 @@ exports[`link inside list 1`] = `
     class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-lc7msn-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiListItem-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-dlbek8-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiListItem-root"
       href="/page2"
       tabindex="0"
     >
@@ -22,7 +22,7 @@ exports[`link inside list 1`] = `
 exports[`link link with href 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-6xddht-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
     href="http://example.org"
   >
     Link
@@ -33,7 +33,7 @@ exports[`link link with href 1`] = `
 exports[`link link with ref 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-6xddht-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
   >
     Link
   </a>
@@ -43,7 +43,7 @@ exports[`link link with ref 1`] = `
 exports[`link link with to 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-6xddht-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
     href="/page2"
   >
     Link
@@ -54,7 +54,7 @@ exports[`link link with to 1`] = `
 exports[`link should be rendered correctly 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-6xddht-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
   >
     Link
   </a>

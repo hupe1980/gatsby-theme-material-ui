@@ -24,7 +24,6 @@ module.exports = (themeOptions) => {
           ...muiPluginConfig,
         },
       },
-      `gatsby-plugin-react-helmet`,
       {
         resolve: `gatsby-plugin-webfonts`,
         options: {
