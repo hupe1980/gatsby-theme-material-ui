@@ -1,7 +1,7 @@
 {
   "name": "gatsby-material-ui-components",
   "description": "Material-UI componentes for Gatsby",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
